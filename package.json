@@ -1,0 +1,48 @@
+{
+  "name": "green-roof-diagnostics",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "11.0.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "start_": "next start -p $PORT",
+    "start": "NODE_ENV=production node server.js",
+    "heroku-postbuild": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bradgarner/green-search": "^0.2.12",
+    "buttercms": "^1.1.2",
+    "chart.js": "^2.7.3",
+    "compression": "^1.7.3",
+    "conjunction-junction": "^3.9.7",
+    "delayed-scroll-restoration-polyfill": "^0.1.1",
+    "detect-browser": "^4.0.3",
+    "dotenv-webpack": "^1.5.7",
+    "emit-file-loader": "0.0.2",
+    "express": "^4.16.4",
+    "express-sslify": "^1.2.0",
+    "graphing-helpers": "^4.8.4",
+    "icon-indexer": "^1.7.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^6.1.1",
+    "react": "^16.4.2",
+    "react-chart-js-preprocessor": "^0.2.3",
+    "react-chartjs-2": "^2.7.4",
+    "react-csv": "^1.0.19",
+    "react-dom": "^16.4.2",
+    "react-ga": "^2.5.5",
+    "react-lazyload": "^2.5.0",
+    "react-router-dom": "^4.3.1",
+    "react-share": "^2.3.1",
+    "save": "^2.3.2",
+    "styled-jsx-css-loader": "^0.3.0"
+  }
+}
