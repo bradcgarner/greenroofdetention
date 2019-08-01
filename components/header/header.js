@@ -126,9 +126,9 @@ export default class Header extends React.Component {
       }
       return <li key={i}
         className={`priority-${m.priority} ${navLink} main ${pathClass} ${m.id}`} >
-        <Link href={m.link}>
+        { m.link ? <Link href={m.link}>
           <a className='link' role='link'>{m.barLabel}</a> 
-        </Link>
+        </Link> : null }
         <style jsx>{`
           .nav-link {
             color: ${greenDarker};

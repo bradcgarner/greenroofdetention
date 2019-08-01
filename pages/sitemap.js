@@ -1,9 +1,7 @@
 import Link                from 'next/link';
-import LazyLoad            from 'react-lazyload';
 import { isObjectLiteral } from 'conjunction-junction';
 import Frame               from '../components/_frame.js';
 import { siteMapStatic }   from '../helpers/sitemap-static';
-import { siteMapDynamic }  from '../helpers/sitemap-dynamic';
 import content             from '../helpers/content';
 import { green }           from '../helpers/common-styles.js';
 
@@ -35,14 +33,10 @@ export default class SiteMap extends React.Component {
 
   render() {
 
-    const about = typeof window !== 'undefined' && window.location && window.location.search === '?showabout=true';
-
     const width = 300;
     const pad   = 25;
 
-    const sms = Array.isArray(siteMapStatic) ? siteMapStatic : [] ;
-    const smd = Array.isArray(siteMapDynamic) ? siteMapDynamic : [] ;
-    const sm = [...sms, ...smd];
+    const sm = Array.isArray(siteMapStatic) ? siteMapStatic : [] ;
     const c = content || {} ;
 
     const metas = sm.map((p,i)=>{

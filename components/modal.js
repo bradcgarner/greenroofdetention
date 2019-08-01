@@ -1,4 +1,3 @@
-import X from './graphics/x';
 import { modalBackground } from '../helpers/common-styles';
 
 export default props => {
@@ -8,9 +7,7 @@ export default props => {
   return <div className='modal'>
     <div className='background'
       onClick={()=>toggleModal()}>
-      <div className='close'>
-        <X />
-      </div>
+      <div className='close'/>
     </div>
     {props.content}
     {props.children}
