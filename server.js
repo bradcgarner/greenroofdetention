@@ -27,47 +27,32 @@ app.prepare()
   .then(() => {
     const server = express();
 
+    server.use(compression());
+
+    /* UN COMMENT THIS AFTER DNS ENTRIES
     if(!dev && !process.env.LOCAL){
       const enforce = require('express-sslify');
       server.use(enforce.HTTPS({ trustProtoHeader: true }));
     }
 
-    server.use(compression());
-
     server.use(function forceLiveDomain(req, res, next) {
       const requstedUrl = req.get('Host');
-      const herokuUrl = 'grd-site.herokuapp.com';
+      const herokuUrl = 'greenroofdetention.herokuapp.com';
       if (requstedUrl === herokuUrl) {
         return res.redirect(301, thisUrl + req.originalUrl);
       }
       return next();
     });
+    */
 
     server.get('/', (req, res) => {
       const actualPage = '/';
       renderAndCache(req, res, actualPage);
     });
-    server.get('/monitoring', (req, res) => {
-      const actualPage = '/monitoring';
+    // CREATE ONE OF THESE FOR EACH PAGE
+    server.get('/purple-roof', (req, res) => {
+      const actualPage = '/purple-roof';
       renderAndCache(req, res, actualPage);
-    });
-    server.get('/lab', (req, res) => {
-      const actualPage = '/lab';
-      renderAndCache(req, res, actualPage);
-    });
-    server.get('/collaboration', (req, res) => {
-      const actualPage = '/collaboration';
-      renderAndCache(req, res, actualPage);
-    });
-    server.get('/publications', (req, res) => {
-      const actualPage = '/publications';
-      renderAndCache(req, res, actualPage);
-    });
-    // this is what allows direct access to the page
-    server.get('/publication/:slug', (req, res) => {
-      const actualPage = '/publication';
-      const queryParams = { slug: req.params.slug }; 
-      renderAndCache(req, res, actualPage, queryParams);
     });
     server.get('/contact', (req, res) => {
       const actualPage = '/contact';
