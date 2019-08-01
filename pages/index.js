@@ -1,7 +1,7 @@
 import React           from 'react';
 import Frame           from '../components/_frame';
 import Landing         from '../components/home/landing';
-import HomeContent     from '../components/home/content';
+import ProductContent     from '../components/home/product-content';
 import content         from '../helpers/content';
 import { 
   fireNewPageView }    from '../helpers/tag-manager';
@@ -23,7 +23,7 @@ export default class Index extends React.Component {
       meta={content.index.meta}
       toggleModal={this.toggleModal} >
       <Landing />
-      <HomeContent/>
+      <ProductContent/>
     </Frame>
   }
 

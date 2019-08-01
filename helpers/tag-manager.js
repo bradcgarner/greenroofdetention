@@ -1,3 +1,5 @@
+export const downloadLink      = 'download-link';
+
 export const fireNewPageView = noScroll => {
   const thisUrl = process.env.THIS_URL;
   if(typeof window !== 'undefined'){

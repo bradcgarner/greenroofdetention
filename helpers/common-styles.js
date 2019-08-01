@@ -245,3 +245,19 @@ export const transparent = `
   opacity: 0.1;
   cursor: initial;
 `;
+
+export const defQuoteStyle = `
+  font-size:   14px;
+  line-height: 18px;
+  text-align:  justify;
+  color:       ${globalHeaderColor};
+  margin-top: 10px;
+  margin-bottom: 10px;
+  ${fontReading}
+`;
+
+export const defEmStyle = `
+  font-size: 16px;
+  font-weight: bold;
+  color:    #8bad33;
+`;

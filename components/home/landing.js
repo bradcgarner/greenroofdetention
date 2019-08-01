@@ -8,6 +8,7 @@ export default function Landing(props) {
     <div className='cover'>
       <div className='building-container'>
         <Building/>
+        <p className='absolut'>X</p>
       </div>
     </div>
     <style jsx>{`
@@ -20,6 +21,12 @@ export default function Landing(props) {
       .building-container {
         display: block;
         width: 90%;
+        position: relative;
+      }
+      .absolut {
+        position: absolute;
+        top: 15%;
+        left: 50%;
       }
       .landing {
         position: relative;
