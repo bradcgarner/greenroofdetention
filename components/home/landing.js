@@ -5,40 +5,60 @@ import GRDetLogo from '../graphics/greenroofdetention';
 import Link from 'next/link';
 import { Leaf } from '../graphics/icons';
 
-export default function Landing(props) {
+export default class Landing extends React.Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       word: false
+    }
+    this.handleWord = this.handleWord.bind(this)
+  }
+  
+handleWord(){
+  this.setState(prevState => {
+    return {
+      word: !prevState.word
+    }
+  })
+}
 
-  const links = [
-    'polderdak',
-    'purple-roof',
-    'hydrotech',
-    'hydroventive',
-    'haybase',
-    'custom'
-  ].map((l,i)=>{
-    return <Link key={i} href={`/${l}`}>{l}</Link>
-  });
 
-  return <header className='landing'>
+
+  render(){
+    const links = [
+      'polderdak',
+      'purple-roof',
+      'hydrotech',
+      'hydroventive',
+      'haybase',
+      'custom'
+    ].map((l,i)=>{
+      return <Link key={i} href={`/${l}`}>{l}</Link>
+    });
+  
+    return <header className='landing'>
     <div className='cover'>
       <div className='building-container' >
         <GRDetLogo />
+        <div className="fa-leaf" style={{color:'mediumseagreen'}}>
+          <Leaf  style={{height: 80, width: 80}}/>
+        </div>
       </div>
-      <div className='building-container' onClick={()=>console.log('click anywhere else on the svg to close')}>
+      <div className='building-container'>
         <Building/>
         
-        <div style={{color:'red'}}>
-          <Leaf style={{height: 30, width: 30}}/>
-        </div>
-
         <div className='building-popover building-popover-lev4'>
           <p className='building-popover-text'>I am popover # 1</p>
           <p className='building-popover-text'>I am popover # 1 line #1</p>
         </div>
-
+        <p onClick={this.handleWord}>{this.state.word ? <p>ef</p> : null}yooooo</p>
         <div className='building-popover building-popover-lev3-r'>
           <p className='building-popover-text'>I am popover #2</p>
           <p className='building-popover-text'>I am popover #2 line #2</p>
         </div>
+
+        
 
       </div>
     </div>
@@ -83,6 +103,9 @@ export default function Landing(props) {
         overflow: hidden;
       }
       .cover {
+        margin-top: 170px;
+        height: 100vh;
+        width: 94vw;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -91,6 +114,53 @@ export default function Landing(props) {
       .products {
         flex-direction: column;
       }
+
+      /* Icon From Font Awesome */
+      .fa-leaf {
+        position: absolute;
+        right:-90px;
+        top: 0px;
+        font-size:60px;
+      }
+
+      @media (max-width: 1123px) { 
+        .fa-leaf {
+          position: absolute;
+          top: -5px;
+          right:-90px;
+          font-size:35px;
+        } 
+       }
+
+
+       @media (min-width: 850px) { 
+        .fa-leaf {
+          position: absolute;
+          top: -15px;
+          right:-90px;
+          font-size:35px;
+        } 
+       }
+    
+    @media (max-width: 599px) { 
+        .fa-leaf {
+          position: absolute;
+          top: -20px;
+          right:-90px;
+          font-size:35px;
+        } 
+       }
+    
+       @media (max-width: 500px) { 
+        .fa-leaf {
+          position: absolute;
+          top: -100px;
+          right:160px;
+          font-size:35px;
+        } 
+       }
+       }
     `}</style>
   </header>
+    }
   }
