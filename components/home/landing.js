@@ -10,15 +10,15 @@ export default class Landing extends React.Component {
     super(props)
   
     this.state = {
-       word: false
+       popUp: false
     }
-    this.handleWord = this.handleWord.bind(this)
+    this.handlePopUp = this.handlePopUp.bind(this)
   }
   
-handleWord(){
+handlePopUp(){
   this.setState(prevState => {
     return {
-      word: !prevState.word
+      popUp: !prevState.popUp
     }
   })
 }
@@ -46,17 +46,14 @@ handleWord(){
         </div>
       </div>
       <div className='building-container'>
-        <Building/>
+        <Building />
         
-        <div className='building-popover building-popover-lev4'>
+      
+        <p className="popOverOne" onClick={this.handlePopUp}>{this.state.popUp &&   <div className='building-popover building-popover-lev4'>
           <p className='building-popover-text'>I am popover # 1</p>
           <p className='building-popover-text'>I am popover # 1 line #1</p>
-        </div>
-        <p onClick={this.handleWord}>{this.state.word ? <p>ef</p> : null}yooooo</p>
-        <div className='building-popover building-popover-lev3-r'>
-          <p className='building-popover-text'>I am popover #2</p>
-          <p className='building-popover-text'>I am popover #2 line #2</p>
-        </div>
+        </div>}X</p>
+        
 
         
 
@@ -114,7 +111,6 @@ handleWord(){
       .products {
         flex-direction: column;
       }
-
       /* Icon From Font Awesome */
       .fa-leaf {
         position: absolute;
@@ -122,7 +118,6 @@ handleWord(){
         top: 0px;
         font-size:60px;
       }
-
       @media (max-width: 1123px) { 
         .fa-leaf {
           position: absolute;
@@ -131,8 +126,6 @@ handleWord(){
           font-size:35px;
         } 
        }
-
-
        @media (min-width: 850px) { 
         .fa-leaf {
           position: absolute;
@@ -159,6 +152,14 @@ handleWord(){
           font-size:35px;
         } 
        }
+       }
+
+       .popOverOne{
+         position: absolute;
+         top: 50px;
+         left:200px;
+         color:blue;
+         padding:20px;
        }
     `}</style>
   </header>
