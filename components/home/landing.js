@@ -3,6 +3,7 @@ import { accentFontColor } from '../../helpers/common-styles';
 import Building from './building-multiple-types';
 import GRDetLogo from '../graphics/greenroofdetention';
 import Link from 'next/link';
+import { Leaf } from '../graphics/icons';
 
 export default function Landing(props) {
 
@@ -19,12 +20,26 @@ export default function Landing(props) {
 
   return <header className='landing'>
     <div className='cover'>
-      <div className='building-container'>
+      <div className='building-container' >
         <GRDetLogo />
       </div>
-      <div className='building-container'>
+      <div className='building-container' onClick={()=>console.log('click anywhere else on the svg to close')}>
         <Building/>
-        <p className='absolut'>X</p>
+        
+        <div style={{color:'red'}}>
+          <Leaf style={{height: 30, width: 30}}/>
+        </div>
+
+        <div className='building-popover building-popover-lev4'>
+          <p className='building-popover-text'>I am popover # 1</p>
+          <p className='building-popover-text'>I am popover # 1 line #1</p>
+        </div>
+
+        <div className='building-popover building-popover-lev3-r'>
+          <p className='building-popover-text'>I am popover #2</p>
+          <p className='building-popover-text'>I am popover #2 line #2</p>
+        </div>
+
       </div>
     </div>
     <div className='products'>
@@ -46,10 +61,21 @@ export default function Landing(props) {
         width: 90%;
         position: relative;
       }
-      .absolut {
+      .building-popover {
         position: absolute;
-        top: 15%;
-        left: 50%;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ccc;
+        border: 1px solid black;
+      }
+      .building-popover-lev4 {
+        top: 6%;
+        left: 39%;
+      }
+      .building-popover-lev3-r {
+        top: 25%;
+        left: 70%;
       }
       .landing {
         position: relative;
