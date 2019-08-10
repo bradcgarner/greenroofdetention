@@ -190,9 +190,9 @@ export default class Header extends React.Component {
       <div className='nav-bar'>
         <div className={`${navLink} main ${pathClass} home`} >
           <Link href={'/'}>
-            <div role='link' className='logo' >
+            <a role='link' className='logo' >
               <PRLogo animation={true}/>
-            </div>
+            </a>
           </Link>
         </div>
         <ul role='nav' className='nav-links'>

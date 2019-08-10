@@ -15,6 +15,7 @@ import { FilePdf }         from '../graphics/icons';
 import { 
   downloadLink, 
   fireGtmHover }           from '../../helpers/tag-manager';
+import Link from 'next/link';
 
 export default function ProductContent(props) {
 
@@ -115,7 +116,24 @@ export default function ProductContent(props) {
     </div>
   });
 
+  const links = [
+    'polderdak',
+    'purple-roof',
+    'hydrotech',
+    'hydroventive',
+    'haybase',
+    'custom'
+  ].map((l,i)=>{
+    return <Link key={i} href={`/${l}`}><a>{l}</a></Link>
+  });
+
     return <div className='content'>
+
+      <div className='products'>
+        <p>These products will be shown</p>
+        {links}
+      </div> 
+
       <h1 className='title'>{nav.pageHeader}</h1>
       <div className='content-inner'>
         <div className='leading-text'>

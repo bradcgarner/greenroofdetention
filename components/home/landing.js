@@ -1,36 +1,45 @@
+import { 
+  calcScreenType,
+  calcMinimumWindowDimensions } from 'browser-helpers';
 import content             from '../../helpers/content';
 import { accentFontColor } from '../../helpers/common-styles';
 import Building from './building-multiple-types';
-import GRDetLogo from '../graphics/greenroofdetention';
-import Link from 'next/link';
-import { Leaf } from '../graphics/icons';
 
 export default function Landing(props) {
 
-  const links = [
-    'polderdak',
-    'purple-roof',
-    'hydrotech',
-    'hydroventive',
-    'haybase',
-    'custom'
-  ].map((l,i)=>{
-    return <Link key={i} href={`/${l}`}>{l}</Link>
-  });
+
+  const {
+    cssWidthOuter,
+    cssHeightOuter
+  } = calcMinimumWindowDimensions(typeof window !== 'undefined' ? window : {});
+  console.log('cssWidthOuter',cssWidthOuter,
+    'cssHeightOuter',cssHeightOuter)
+
+  const screenInfo = calcScreenType(cssWidthOuter,
+    cssHeightOuter);
+  const screenType = screenInfo.type
+  console.log('screenInfo',screenInfo,'screenType',screenType)
+
+  const levelKey = {
+    desktop: 6,
+    phoneP : 15,
+    phoneL : 5,
+    tabletL: 7,
+    tabletP: 9,
+  }
+  const levels = levelKey[screenType] || 6;
+  console.log('levels', levels, levelKey[screenType])
+
+  const building = typeof window !== 'undefined' ?
+    <Building levels={levels}/> : null ;
+
+  const maxWidth = 1.5 * cssHeightOuter;
 
   return <header className='landing'>
-    <div className='cover'>
-      <div className='building-container' >
-        <GRDetLogo />
-      </div>
-      <div className='building-container' onClick={()=>console.log('click anywhere else on the svg to close')}>
-        <Building/>
-        
-        <div style={{color:'red'}}>
-          <Leaf style={{height: 30, width: 30}}/>
-        </div>
-
-        <div className='building-popover building-popover-lev4'>
+    <div className='building-container'>
+      {building}
+    </div>
+        {/* <div className='building-popover building-popover-lev4'>
           <p className='building-popover-text'>I am popover # 1</p>
           <p className='building-popover-text'>I am popover # 1 line #1</p>
         </div>
@@ -38,28 +47,26 @@ export default function Landing(props) {
         <div className='building-popover building-popover-lev3-r'>
           <p className='building-popover-text'>I am popover #2</p>
           <p className='building-popover-text'>I am popover #2 line #2</p>
-        </div>
-
-      </div>
-    </div>
-    <div className='products'>
-      <p>These products will be shown</p>
-      {links}
-    </div>
+        </div> */}
     <style jsx>{`
-      .landing,
-      .cover {
+      .landing {
         height: 100vh;
         width: 100vw;
-        min-height: 440px;
-      }
-      .landing {
         flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        border-bottom: 5px solid black;
+        background: linear-gradient(to top, #f8f2ce, #fff);
+        background-size: cover;
+        overflow: hidden;
       }
       .building-container {
         display: block;
-        width: 90%;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
         position: relative;
+        max-width: ${maxWidth}px;
       }
       .building-popover {
         position: absolute;
@@ -76,17 +83,6 @@ export default function Landing(props) {
       .building-popover-lev3-r {
         top: 25%;
         left: 70%;
-      }
-      .landing {
-        position: relative;
-        background-size: cover;
-        overflow: hidden;
-      }
-      .cover {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
       }
       .products {
         flex-direction: column;
