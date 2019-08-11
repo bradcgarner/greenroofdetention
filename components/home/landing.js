@@ -1,5 +1,4 @@
 import { 
-  calcScreenType,
   calcMinimumWindowDimensions } from 'browser-helpers';
 import content             from '../../helpers/content';
 import { accentFontColor } from '../../helpers/common-styles';
@@ -12,28 +11,38 @@ export default function Landing(props) {
     cssWidthOuter,
     cssHeightOuter
   } = calcMinimumWindowDimensions(typeof window !== 'undefined' ? window : {});
-  console.log('cssWidthOuter',cssWidthOuter,
-    'cssHeightOuter',cssHeightOuter)
 
-  const screenInfo = calcScreenType(cssWidthOuter,
-    cssHeightOuter);
-  const screenType = screenInfo.type
-  console.log('screenInfo',screenInfo,'screenType',screenType)
+  const wHRatio = cssHeightOuter/cssWidthOuter;
+  const levelLookup = [ // h / w
+    // 0,
+    // 0.56, // 5
+    0.68, // 6
+    0.77, // 7
+    0.86, // 8
+    0.95, // 9
+    1.04, // 10
+    1.14, // 11
+    1.23, // 12
+    1.31, // 13
+    1.4,  // 14
+    1.49  // 15
+  ];
 
-  const levelKey = {
-    desktop: 6,
-    phoneP : 15,
-    phoneL : 5,
-    tabletL: 7,
-    tabletP: 9,
-  }
-  const levels = levelKey[screenType] || 6;
-  console.log('levels', levels, levelKey[screenType])
+  let levels = 5;
+  levelLookup.forEach((l,i)=>{
+    if(wHRatio >= l){
+      levels ++;
+    }
+  });
 
   const building = typeof window !== 'undefined' ?
     <Building levels={levels}/> : null ;
 
-  const maxWidth = 1.5 * cssHeightOuter;
+  const maxWidth = 
+    wHRatio >= 0.56 ?
+    '100%' : 
+    '0.53vh' ;
+  console.log('levels', levels, 'cssWidthOuter',cssWidthOuter,'cssHeightOuter',cssHeightOuter,'maxWidth', maxWidth)
 
   return <header className='landing'>
     <div className='building-container'>
@@ -62,11 +71,40 @@ export default function Landing(props) {
       }
       .building-container {
         display: block;
-        width: 100%;
+        width: 56%;
         height: auto;
         max-height: 100%;
         position: relative;
-        max-width: ${maxWidth}px;
+      }
+      @media(min-height: 330px){
+        .building-container {
+          width: 65%;
+        }
+      }
+      @media(min-height: 380px){
+        .building-container {
+          width: 78%;
+        }
+      }
+      @media(min-height: 415px){
+        .building-container {
+          width: 84%;
+        }
+      }
+      @media(min-height: 450px){
+        .building-container {
+          width: 90%;
+        }
+      }
+      @media(min-height: 475px){
+        .building-container {
+          width: 95%;
+        }
+      }
+      @media(min-height: 500px){
+        .building-container {
+          width: 100%;
+        }
       }
       .building-popover {
         position: absolute;
