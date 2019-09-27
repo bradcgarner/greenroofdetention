@@ -1,6 +1,6 @@
 export default function Building(props) {
 
-  const levels = props.levels || 5;
+  // const levels = props.levels || 5;
 
   const window0 = '#7c8fd3';
   const window1 = '#5c74c9';
@@ -11,19 +11,19 @@ export default function Building(props) {
   const midGray = '#ddd';
 
   const vBoxMaxHt = 2760;
-  const vBoxMinHt = 1070;
-  const vBoxMaxDelta = vBoxMaxHt - vBoxMinHt; // 1690
-  const minLevels = 5;
-  const maxLevels = 15;
-  const levelsDelta = maxLevels - minLevels; // 10
-  const vBoxPerLevel = vBoxMaxDelta / levelsDelta; // 169
-  const extraLevels = levels - minLevels;
-  const extraHeight = extraLevels * vBoxPerLevel
-  const vBoxHt = vBoxMinHt + extraHeight;
+  // const vBoxMinHt = 1070;
+  // const vBoxMaxDelta = vBoxMaxHt - vBoxMinHt; // 1690
+  // const minLevels = 5;
+  // const maxLevels = 15;
+  // const levelsDelta = maxLevels - minLevels; // 10
+  // const vBoxPerLevel = vBoxMaxDelta / levelsDelta; // 169
+  // const extraLevels = levels - minLevels;
+  // const extraHeight = extraLevels * vBoxPerLevel
+  // const vBoxHt = vBoxMinHt + extraHeight;
 
   return <svg xmlns='http://www.w3.org/2000/svg' 
     className='svg'
-    viewBox={`0 0 1861 ${vBoxHt}`}>
+    viewBox={`0 -100 1861 ${vBoxMaxHt}`}>
     <defs>
       <linearGradient id='window-gradient' x1='0' y1='100' x2='1500' y2='2700' gradientUnits='userSpaceOnUse'>
         <stop offset='0%' stopColor={window0}/>
@@ -248,7 +248,9 @@ export default function Building(props) {
       <rect className='window' x='495' y='294' width='80' height='100'/>
     </g>
 
-    <g className='level1-l'>
+    <g className='level1-l' 
+      onMouseOver={()=>props.handleClick('purple','1l')}
+      onClick={()=>props.handleClick('purple','1l')}>
     <g className='label'>
       <path className='purple' d='M64.14,811.89H86q7.45,0,11.85,4.32a13.86,13.86,0,0,1,4.39,10.23,14.34,14.34,0,0,1-4.34,10.48q-4.35,4.35-11.83,4.36H76.37V861H64.14Zm12.23,9v11.39h5.7q7.62,0,7.63-5.7,0-3.2-2-4.45t-7-1.24Z'/>
       <path className='purple' d='M147.28,811.89h12.24v27.88q0,10.76-6.37,16.31T135,861.63q-11.68,0-18.13-5.62t-6.45-16.17v-28h12.27v28.23a10.63,10.63,0,0,0,3.36,8.22,12.45,12.45,0,0,0,8.81,3.1,12.74,12.74,0,0,0,9-3.17q3.39-3.16,3.39-9Z'/>
@@ -262,7 +264,9 @@ export default function Building(props) {
     </g>
   </g>
 
-  <g className='level1-r'>
+  <g className='level1-r' 
+    onMouseOver={()=>props.handleClick('blue-gray','1r')}
+    onClick={()=>props.handleClick('blue-gray','1r')}>
     <g className='label'>
       <path className='blue' d='M1394.64,792.89h21.24q7.59,0,11.93,3.65a11,11,0,0,1,4.35,8.64q0,6.39-6.72,9.8a14.14,14.14,0,0,1,7.75,4.72,12.24,12.24,0,0,1,2.69,7.88,13.44,13.44,0,0,1-4.39,10.41q-4.4,4-12.94,4h-23.91Zm12.24,9V812.4h6.4a6.59,6.59,0,0,0,4.6-1.51,5,5,0,0,0,1.66-3.8,4.81,4.81,0,0,0-1.66-3.73,6.67,6.67,0,0,0-4.6-1.47Zm0,19.51V833h6.89q4.89,0,7-1.35c1.43-.91,2.15-2.47,2.15-4.7a4.77,4.77,0,0,0-2-4.06,9.07,9.07,0,0,0-5.45-1.49Z'/>
       <path className='blue' d='M1482.36,833v9h-37.44V792.89h12.23V833Z'/>
@@ -280,7 +284,9 @@ export default function Building(props) {
     </g>
   </g>
 
-  <g className='level2-l'>
+  <g className='level2-l'  
+    onMouseOver={()=>props.handleClick('purple','2l')}
+    onClick={()=>props.handleClick('purple','2l')}>
     <g className='label'>
       <path className='purple' d='M171.14,645.89H193q7.46,0,11.85,4.32a13.86,13.86,0,0,1,4.39,10.23,14.34,14.34,0,0,1-4.34,10.48q-4.35,4.35-11.83,4.36h-9.74V695H171.14Zm12.23,9v11.39h5.7q7.62,0,7.63-5.7,0-3.2-2-4.45t-7-1.24Z'/>
       <path className='purple' d='M254.28,645.89h12.24v27.88q0,10.76-6.37,16.31T242,695.63q-11.68,0-18.13-5.62t-6.45-16.17v-28h12.27v28.23a10.63,10.63,0,0,0,3.36,8.22,12.45,12.45,0,0,0,8.81,3.1,12.74,12.74,0,0,0,9-3.17q3.39-3.16,3.39-9Z'/>
@@ -295,7 +301,9 @@ export default function Building(props) {
   </g>
 
 
-  <g className='level2-r'>
+  <g className='level2-r' 
+    onMouseOver={()=>props.handleClick('blue-green','2r')}
+    onClick={()=>props.handleClick('blue-green','2r')}>
     <g className='label'>
       <path className='blue' d='M993.64,617.89h21.24q7.59,0,11.93,3.65a11,11,0,0,1,4.35,8.64q0,6.39-6.72,9.8a14.14,14.14,0,0,1,7.75,4.72,12.24,12.24,0,0,1,2.69,7.88,13.44,13.44,0,0,1-4.39,10.41q-4.4,4-12.94,4H993.64Zm12.24,9V637.4h6.4a6.59,6.59,0,0,0,4.6-1.51,5,5,0,0,0,1.66-3.8,4.81,4.81,0,0,0-1.66-3.73,6.67,6.67,0,0,0-4.6-1.47Zm0,19.51V658h6.89q4.89,0,7-1.35c1.43-.91,2.15-2.47,2.15-4.7a4.77,4.77,0,0,0-2-4.06,9.07,9.07,0,0,0-5.45-1.49Z'/>
       <path className='blue' d='M1081.36,658v9h-37.44V617.89h12.23V658Z'/>
@@ -316,7 +324,9 @@ export default function Building(props) {
   </g>
 
 
-  <g className='level3'>
+  <g className='level3' 
+    onMouseOver={()=>props.handleClick('purple','3')}
+    onClick={()=>props.handleClick('purple','3')}>
     <g className='label'>
       <path className='purple' d='M742.14,469.89H764q7.46,0,11.85,4.32a13.86,13.86,0,0,1,4.39,10.23,14.34,14.34,0,0,1-4.34,10.48q-4.35,4.35-11.83,4.36h-9.74V519H742.14Zm12.23,9v11.39h5.7q7.62,0,7.63-5.7,0-3.19-2-4.45t-7-1.24Z'/>
       <path className='purple' d='M825.28,469.89h12.24v27.88q0,10.75-6.37,16.31T813,519.63q-11.68,0-18.13-5.62t-6.45-16.17V469.89h12.27v28.23a10.63,10.63,0,0,0,3.36,8.22,12.45,12.45,0,0,0,8.81,3.1,12.74,12.74,0,0,0,9-3.17q3.39-3.16,3.39-9Z'/>
@@ -332,7 +342,9 @@ export default function Building(props) {
   </g>
 
 
-  <g className='level4'>
+  <g className='level4' 
+    onMouseOver={()=>props.handleClick('blue-gray','4')}
+    onClick={()=>props.handleClick('blue-gray','4')}>
     <g className='label'>
       <path className='blue' d='M741.65,238.21h21.23q7.59,0,11.93,3.66a11,11,0,0,1,4.35,8.64q0,6.39-6.72,9.8a14.13,14.13,0,0,1,7.75,4.71,12.26,12.26,0,0,1,2.69,7.88,13.46,13.46,0,0,1-4.39,10.42q-4.4,4-12.94,4h-23.9Zm12.23,9v10.52h6.4a6.54,6.54,0,0,0,4.6-1.52,4.92,4.92,0,0,0,1.66-3.79,4.8,4.8,0,0,0-1.66-3.73,6.67,6.67,0,0,0-4.6-1.48Zm0,19.52v11.6h6.89q4.89,0,7-1.36t2.15-4.69a4.77,4.77,0,0,0-2-4.06,9,9,0,0,0-5.45-1.49Z'/>
       <path className='blue' d='M829.36,278.33v9H791.92V238.21h12.23v40.12Z'/>
@@ -358,7 +370,7 @@ export default function Building(props) {
     </g>
   </g>
 
-  <g className='logo'>
+  <g className='logo' transform='translate(0,-100)'>
     <polygon className='logo-detention' points='1769 150.01 1743.54 150.01 1704.66 90.3 1704.66 150.01 1677.83 150.01 1677.83 37.94 1703.15 37.94 1742.04 97.56 1742.04 37.94 1769 37.94 1769 150.01'/>
     <path className='logo-detention' d='M1618.16,151.32c-16.47,0-29.51-5.28-38.76-15.69-9-10.12-13.56-24.22-13.56-41.92s4.58-31.6,13.61-41.68c9.27-10.35,22.34-15.6,38.84-15.6,16.13,0,29,5.34,38.34,15.86,9.06,10.23,13.65,24.21,13.65,41.55s-4.6,31.27-13.67,41.55C1647.27,146,1634.33,151.32,1618.16,151.32Zm.13-88.38c-8,0-13.85,2.29-17.74,7-4.23,5.13-6.37,13.17-6.37,23.89,0,10.9,2.14,19,6.37,24.16,3.89,4.71,9.65,7,17.61,7s13.75-2.27,17.53-6.93c4.15-5.12,6.25-13.27,6.25-24.24s-2.09-18.91-6.22-24C1632,65.19,1626.26,62.94,1618.29,62.94Z'/>
     <rect className='logo-detention' x='1528.92' y='37.94' width='27.68' height='112.07'/>

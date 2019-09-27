@@ -70,7 +70,7 @@ export default function ProductContent(props) {
       id={l.id || `project-id-${i}`}
       onMouseEnter={()=>fireGtmHover(l.id)}
       onTouchMove={()=>fireGtmHover(l.id)} >
-      <div className='image-container'>
+      {/* <div className='image-container'>
         {Array.isArray(l.images)?
           l.images.map((img,idx)=>{
             return <LazyLoad height={400} offset={100}>
@@ -89,7 +89,7 @@ export default function ProductContent(props) {
       <div className='text'>
         {text}
       </div>
-      {pdf}
+      {pdf} */}
       <style jsx>{`
         .project-container {
           flex-direction: column;
