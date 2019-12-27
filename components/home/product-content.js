@@ -70,26 +70,28 @@ export default function ProductContent(props) {
       id={l.id || `project-id-${i}`}
       onMouseEnter={()=>fireGtmHover(l.id)}
       onTouchMove={()=>fireGtmHover(l.id)} >
-      {/* <div className='image-container'>
-        {Array.isArray(l.images)?
-          l.images.map((img,idx)=>{
-            return <LazyLoad height={400} offset={100}>
-              <img key={idx}
-                src={img.image} 
-                alt={img.alt}
-                className='image'/>
-            </LazyLoad>
-          }) :
-        <LazyLoad height={400} offset={100}>
-          <img src={l.image} 
-            alt={l.alt}
-            className='image'/>
-        </LazyLoad> }
+      <div className='image-container'>
+        {
+          Array.isArray(l.images)?
+            l.images.map((img,idx)=>{
+              return <LazyLoad height={400} offset={100}>
+                <img key={idx}
+                  src={img.image} 
+                  alt={img.alt}
+                  className='image'/>
+              </LazyLoad>
+            }) :
+          <LazyLoad height={400} offset={100}>
+            <img src={l.image} 
+              alt={l.alt}
+              className='image'/>
+          </LazyLoad> 
+        }
       </div>
       <div className='text'>
         {text}
       </div>
-      {pdf} */}
+      {pdf}
       <style jsx>{`
         .project-container {
           flex-direction: column;

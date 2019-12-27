@@ -1,10 +1,12 @@
 import React           from 'react';
 import Frame           from '../components/_frame';
 import Landing         from '../components/home/landing';
-import ProductContent     from '../components/home/product-content';
+import ProductContent  from '../components/home/product-content';
 import content         from '../helpers/content';
 import { 
   fireNewPageView }    from '../helpers/tag-manager';
+import Intro from '../components/home/intro';
+import PartnerLogos from '../components/home/partner-logos';
 
 export default class Index extends React.Component {
   constructor(props){
@@ -23,6 +25,8 @@ export default class Index extends React.Component {
       meta={content.index.meta}
       toggleModal={this.toggleModal} >
       <Landing />
+      <Intro/>
+      <PartnerLogos/>
       <ProductContent/>
     </Frame>
   }
