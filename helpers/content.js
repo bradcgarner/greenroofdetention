@@ -61,56 +61,91 @@ export default {
     subTag: `We are a team of professionals of various backgrounds who share a common goal: to improve the understanding and effectiveness of green infrastructure through rigorous science.`,
   },
 
-  contact: {
-    mainNav: {
-      barLabel:    'Contact', // label in header
-      burgerLabel: 'Contact Us',
-      pageHeader:  'Contact Us',
-      divHeader:   'Contact Us', // label on actual div
-      id:     'contact', // this is the id of the div for scrolling purposes.
-      link:   '/contact',
-      priority: 2, // 2nd to go
+  intro: [
+    {
+      h: 'header',
+      p: 'greenroofdetention.com is a clearinghouse of green roof solutions that provide stormwater detention. ',
     },
-    meta: {
-      // limit title to 55 characters
-      title:       'Contact Purple-Roof',
-      // limit description to 120-140 characters
-      //            1        10        20        30        40        50        60        70        80        90        100       110        120        130        140
-      description: 'Purple-Roof is a non-proprietary performance specification for a resilient green roof.',
-      url:         `${thisUrl}/contact`,
-      image:       'https://cdn.buttercms.com/8t6e9sjgTB6hfTBgIsox',
-      alt:         'Contact Purple-Roof',
+    {
+      h: 'header',
+      p: 'Both retention and detention are important stormwater management strategies. Green roofs have traditionally only offered retention. This site lists solutions that offer detention AND retention. ',
     },
-    fontsToLoad: fontsToLoad.slice(0,2),
-    // contact info is in the footer
-    info: {
-      buttonLabel: 'Contact Us',
-      address1:    '17416 Germanna Highway',
-      address2:    'Culpeper, VA 22701',
-      tel:         '1+540.881.0058',
-      mapUrl:      'https://www.google.com/maps/place/17416+Germanna+Hwy,+Culpeper,+VA+22701/@38.450847,-77.938673,17z/data=!3m1!4b1!4m5!3m4!1s0x89b42753cc4aeb5d:0x9ee3db7f5b221321!8m2!3d38.4508428!4d-77.936479',
+    {
+      h: 'header',
+      p: 'Stormwater retention is preventing the occurrence of runoff, by capturing water and allowing plants to evaporate it into the atmosphere. The video series at purple-roof.com/retention-and-detention (which Green Roof Diagnostics assisted with) does a good job at explaining the differences and importance of the two phenomena. ',
     },
-    placeholders: {
-      name: 'name',
-      email: 'name@email.com',
-      tel: '555.555.5555',
-      msg: 'How can we help you?',
+    {
+      h: 'header',
+      p: 'Stormwater detention is temporarily storing stormwater, then allowing it to drain later. Detention has always been essential to stormwater management. Why? Because detention is reliable. The physics is quite simple. ',
     },
-    submitButton: 'Send',
-    // success message that displays when user clicks send on contact us
-    success: {
-      header: 'Thanks for contacting us!',
-      message: [
-        'Check your email for an auto-generated confirmation of receipt.',
-        'One of our team members will contact you within 1 business day.',
-      ]
+    {
+      h: 'header',
+      p: 'Retention requires storage that empties very slowly (5-10 days). If more rain occurs than storage, runoff is uncontrolled. If rain occurs after the green roof is wet, runoff is uncontrolled, as if the green roof were not there. Can this be solved by just increasing retention storage? No. Emptying retention volume relies on the weather, and the sun and wind will only remove so much water. ',
     },
-    // failure message that displays if contact us is not successfull upon send
-    fail: {
-      header: 'Oops!',
-      message: 'Sorry, something went wrong.  Please try again. If this does not work, please email info@purple-roof.com.',
+    {
+      h: 'header',
+      p: 'Detention requires storage that empties slowly, but much more rapidly than retention (usually 6-24 hours vs 5-10 days). Emptying detention storage relies on gravity, or possibly some mechanics, not the weather. This makes detention far more reliable, which is why hydrologists worldwide use detention as their #1 tool. ',
     },
-  },
+    {
+      h: 'Why the roof?',
+      p: 'Cities across the globe are dealing with stormwater management crises. Around 40% of the surface are of many cities is rooftop. Around another 40% of the area of cities is pavement. With at least 80% of most cities being covered in impervious surfaces, we need to be creative in dealing with stormwater. The roof is a great opportunity to manage stormwater. ',
+    },
+    {
+      h: 'header',
+      p: 'First, the roof is the highest elevation of any watershed. Dealing with runoff from the roof prevents problems rather than managing problems downstream. ',
+    },
+    {
+      h: 'header',
+      p: 'Second, using green roofs to manage stormwater on rooftops opens the door to compounding benefits offered by green roofs... at no extra charge! These benefits include habitat creation, urban heat island mitigation, extending the life of the roof membrane, reducing cooling costs, and aesthetics. ',
+    },
+    {
+      h: 'header',
+      p: 'Further, unlike stormwater tanks, green roofs reduce stormwater runoff volume through retention. Volume reduction is a vital aspect of urban stormwater management. ',
+    },
+    {
+      h: 'header',
+      p: ' ',
+    },
+    {
+      h: 'header',
+      p: '',
+    },
+    {
+      h: 'header',
+      p: '',
+    },
+    {
+      h: 'header',
+      p: '',
+    },
+  ],
+
+  concepts: [
+  'Detention in green roofs can be accomplished a number of ways. There are currently 3 concepts that accomplish this.',
+
+'Blue-Green Roof concept',
+'Storing water in a horizontal reservoir below a green roof with flow control at the drain, often via smart controls. ',
+
+'Purple Roof concept',
+'Storing water in a horizontal reservoir below a green roof with flow control provided by uniform friction throughout the green roof. ',
+
+'Custom',
+'Unique design by a skilled designer and/or hydrologist to meet custom project needs. ',
+  ],
+
+  bottom: {
+    header: '',
+    text: [
+    'greenroofdetention.com is maintained by Green Roof Diagnostics. If your company provides a green roof detention solution that we omitted, please contact us via the Green Roof Diagnostics website. To be considered for inclusion, solutions must provide retention and detention. Detention shall only include gravitational water, i.e. water above field capacity. Documentation and calculations must clearly illustrate reliable peak flow reduction during a range of design storms including larger design storms such as 150 mm 24-hour Type II. Green Roof Diagnostics maintains this page for the purposes of educating the market about green roof solutions that provide meaningful detention, and Green Roof Diagnostics will decide, at its sole discretion, which solutions to include or exclude.' 
+  ]
+},
+  
+
+
+
+ 
+
+// 
 
   products: {
     mainNav: {

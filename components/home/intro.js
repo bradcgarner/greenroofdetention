@@ -5,9 +5,8 @@ export default function Intro(props){
     <div className='column column-1'>
       <div className='column-content column-content-1'>
         <div className='column-text-container'>
-          <h3 className='header'>Resilient</h3>
-          <p>This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. 
-          </p>
+          <h3 className='header'>{props.h1}</h3>
+          <p>{props.p1}</p>
         </div>
         <div className='image-container'>
           <img  className='image'
@@ -21,9 +20,8 @@ export default function Intro(props){
     <div className='column column-2'>
       <div className='column-content column-content-2'>
         <div className='column-text-container'>
-          <h3 className='header'>Flexible</h3>
-          <p>This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. 
-          </p>
+        <h3 className='header'>{props.h2}</h3>
+          <p>{props.p2}</p>
         </div>
         <div className='image-container'>
           <img className='image'
