@@ -50,14 +50,6 @@ app.prepare()
       renderAndCache(req, res, actualPage);
     });
     // CREATE ONE OF THESE FOR EACH PAGE
-    server.get('/purple-roof', (req, res) => {
-      const actualPage = '/purple-roof';
-      renderAndCache(req, res, actualPage);
-    });
-    server.get('/contact', (req, res) => {
-      const actualPage = '/contact';
-      renderAndCache(req, res, actualPage);
-    });
     server.get('/privacy', (req, res) => {
       const actualPage = '/privacy';
       renderAndCache(req, res, actualPage);

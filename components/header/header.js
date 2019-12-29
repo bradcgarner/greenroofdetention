@@ -1,14 +1,14 @@
 import Link                from 'next/link';
 import { isObjectLiteral } from 'conjunction-junction';
-import PRLogo              from '../graphics/logo-grd-color';
 import content             from '../../helpers/content';
 import { navLink }         from '../../helpers/tag-manager';
 import {
   headerBackgroundColor, 
   navHoverColor,
   accentFontColor,
-  greenDarker }            from '../../helpers/common-styles';
+  green}            from '../../helpers/common-styles';
 import Menu                from './menu';
+import GRDetLogo from '../graphics/greenroofdetention';
 
 export default class Header extends React.Component {
   constructor(props){
@@ -63,7 +63,7 @@ export default class Header extends React.Component {
         {m.barLabel}
         <style jsx>{`
             .nav-link {
-              color: ${greenDarker};
+              color: ${green};
               text-decoration: none;
               min-width: 100px;
               height: 100%;
@@ -95,7 +95,7 @@ export default class Header extends React.Component {
         {m.barLabel}
         <style jsx>{`
           .nav-link {
-            color: ${greenDarker};
+            color: ${green};
             text-decoration: none;
             width: 100px;
             text-align: center;
@@ -131,7 +131,7 @@ export default class Header extends React.Component {
         </Link> : null }
         <style jsx>{`
           .nav-link {
-            color: ${greenDarker};
+            color: ${green};
             margin-left: 5px;
             margin-right: 5px;
             flex: 1;
@@ -191,7 +191,7 @@ export default class Header extends React.Component {
         <div className={`${navLink} main ${pathClass} home`} >
           <Link href={'/'}>
             <a role='link' className='logo' >
-              <PRLogo animation={true}/>
+              <GRDetLogo/>
             </a>
           </Link>
         </div>
@@ -221,14 +221,12 @@ export default class Header extends React.Component {
       }
       .logo {
         display: block;
-        width: 130px;
+        width: 300px;
       }
       .home {
         align-items: center;
         cursor: pointer;
         padding-left: 15px;
-        padding-top: 10px; /* to optically center logo */
-        padding-right: 50px;
         height: 100%;
       }
       @media(min-width: ${bp1}px){

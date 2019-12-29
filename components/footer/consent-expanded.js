@@ -158,8 +158,11 @@ export default class ConsentExpanded extends React.Component {
             flex-grow: 0;
             flex-shrink: 0;
           }
+          .editable-label {
+            cursor: pointer;
+          }
           .editable-label:hover {
-            color: ${accentFontColor};
+            color: ${fontOnColorColorHover};
           }
           .consent-input-label,
           .text {

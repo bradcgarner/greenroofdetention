@@ -1,11 +1,7 @@
 import { 
   defQuoteStyle as defTextStyle, 
   defEmStyle, 
-  fontBlog,
-  globalFontColor,
-  globalHeaderColor,
-  purpleDarker,
-  purpleLighter } from './common-styles';
+} from './common-styles';
 
 const _formatRawHtmlInner = (string, qStyle, mStyle, i=1) => {
 

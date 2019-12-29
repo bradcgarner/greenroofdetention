@@ -7,8 +7,8 @@ import {
   pageContent,
   pageContentInner,
   fontReading,
-  purpleDarker,
-  purpleLighter,
+  accentFontColor,
+  accentFontColorHover,
 }                          from '../../helpers/common-styles';
 import { makeParagraphs }  from '../../helpers/format-html';
 import { FilePdf }         from '../graphics/icons';
@@ -58,10 +58,10 @@ export default function ProductContent(props) {
             ${fontReading}
           }
           .link {
-            color: ${purpleDarker}
+            color: ${accentFontColor}
           }
           .link:hover {
-            color: ${purpleLighter};
+            color: ${accentFontColorHover};
           }
         `}</style>
       </div> : null ;

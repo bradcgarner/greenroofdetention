@@ -21,5 +21,5 @@ const xmlString = staticXmlArr.join(' ');
 
 fs.writeFile('static/sitemap.xml', xmlString, function (err) {
   if (err) throw err;
-  console.log('Generated dynamic sitemap.xml');
+  console.log('Generated sitemap.xml');
 });

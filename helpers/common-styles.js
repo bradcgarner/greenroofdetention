@@ -1,30 +1,22 @@
 export const red =                    '#c12b5b';
-export const green =                  '#8bad33';
-export const greenDarker =            '#7d9b2d';
+export const green =                  '#74bf08';
+export const greenDarker =            '#1e6d05';
+export const greenDarkerRGB =         '30,109,5';
 export const greenLighter =           '#a2bd5b';
 export const gray =                   '#464143';
 export const black =                  '#231f20';
 export const menuBackgroundColor =    '#eee';
 export const navHoverColor       =    '#ddd';
 export const mainHeaderColor =        green;
-export const carouselDotColor =       '#bbb';
-export const carouselDotColorActive = '#717171';
-export const carouselArrowColor =     'white';
 export const consentFontColor =       '#fff';
 export const fontOnColorColor =       'white';
-export const fontOnColorColorHover =  '#888';
+export const fontOnColorColorHover =  '#efe086';
 export const disabledButtonColor   =  '#ccc';
-export const warmGray1             =  '#6e6259';
-export const warmGray2             =  '#584e47';
-export const warmGray3             =  '#423a35';
-export const warmGray4             =  '#7c7169';
 
 export const accentFontColor =        '#73308a';
 export const accentFontColorHover =   '#8d798d';
 export const purple =                 '#73308a';
 export const purpleRGB =              '115,48,138';
-export const purpleDarker =           '#5c266e';
-export const purpleLighter =          '#8f59a1';
 export const headerFontColor =        accentFontColor;
 export const headerFontColorHover =   '#a28ba2';
 export const headerBackgroundColor =  '#fafafa';
@@ -46,8 +38,7 @@ export const backgroundLight = 'background-color: #fff;';
 export const backgroundMid   = 'background-color: #f8f9f9;';
 export const backgroundDark  = 'background-color: #e6e6e6;';
 export const backgroundVDark = 'background-color: #8d798d;';
-export const backgroundBlack = `background-color: ${purple};`;
-
+export const backgroundDkGreen = `background-color: ${greenDarker};`;
 
 // this is in the Myers reset in _frame.js
 export const fontNormal = `
@@ -67,14 +58,8 @@ const fontsToLoadArr = [
   'Open+Sans:700', // blog menu
   'Open+Sans+Condensed:300', // fine print
   'Roboto', // ONLY to check meta tags!!!
-  // 'Anton',
-  // 'Playfair+Display',
-  // 'Inconsolata',// 'Merriweather:300',
-  // 'Arima+Madurai:100',
-  // 'Bellefair',
 ];
 export const fontsToLoad = fontsToLoadArr.join('%7C'); // encoded pipe | character
-
 
 export const section = `
   justify-content: space-between;
@@ -82,22 +67,6 @@ export const section = `
   border-bottom: 1px solid #ddd;
   padding: 70px 20px 20px 20px;
   overflow: hidden;
-`;
-
-export const mainHeaderCSS = `
-  font-size: 45px;
-  text-align: center;
-  color: ${mainHeaderColor};
-  margin-top: 15px;
-  margin-bottom: 15px;
-`;
-
-export const homeContentHeaderCSS = `
-  font-size: 30px;
-  text-align: center;
-  color: ${globalHeaderColor};
-  margin-top: 15px;
-  margin-bottom: 15px;
 `;
 
 export const card = `
@@ -150,7 +119,6 @@ export const bigButtonHover =`
   color: #888;
 `;
 
-
 export const footerElementMargins = `
   margin: 0 20px 50px 20px;
 `;
@@ -170,75 +138,23 @@ export const pageContentInner = `
   max-width: 800px;
 `;
 
-export const iconColorInactive = '#c7c8ca';
-
 export const boxShadow = `box-shadow: rgba(${cardShadowColorRGB}, 0.3) 3px 3px 5px 0px;`
-
-export const headerCSS = `
-  font-size: 30px;
-  text-align: center;
-  color: ${headerFontColor};
-  margin-top: 15px;
-  margin-bottom: 15px;
-`;
-
-export const sectionHeaderCSS = `
-  max-width: 500px;
-  margin-bottom: 30px;
-  font-size: 40px;
-  border-bottom: 7px solid ${accentFontColor};
-`;
-
-export const sectionSubheaderCSS = `
-  font-size: 30px;
-  color: ${accentFontColor};
-`;
-
-export const sectionSubheader2CSS = `
-  font-size: 24px;
-  color: ${accentFontColor};
-`;
 
 export const hotButton = `
   ${_bigButton}
-  background-color: ${purple};
+  background-color: ${green};
   color: #fff;
 `;
 
 export const hotButtonHover = `
   border: 1px solid #ddd;
-  background-color: rgba(${purpleRGB},0.8);
-`;
-
-export const consentButton = `
-  ${_bigButton}
-  background-color: ${purpleDarker};
-  border: 1px solid #ddd;
-  color: #fff;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 35px;
-`;
-
-export const consentButtonHover = `
-  background-color: ${purpleLighter};
+  background-color: rgba(${greenDarkerRGB},0.7);
 `;
 
 export const pageTitle = `
   font-size: 30px;
   text-align: center;
   color: ${globalHeaderColor};
-`;
-
-export const expandCompressStyle = `
-  position: absolute;
-  top: -20px;
-  right: 0;
-  cursor: pointer;
-  height: 30px;
-  width: 30px;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const transparent = `

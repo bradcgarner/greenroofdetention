@@ -1,6 +1,6 @@
 import ConsentExpanded    from './consent-expanded';
 import ConsentBanner      from './consent-banner';
-import { backgroundBlack } from '../../helpers/common-styles';
+import { backgroundDkGreen } from '../../helpers/common-styles';
 
 export default props => {
 
@@ -24,7 +24,7 @@ export default props => {
     </div>
     <style jsx>{`
       .consent-container {
-        ${backgroundBlack}
+        ${backgroundDkGreen}
         position: fixed;
         bottom: 0;
         left: 0;
