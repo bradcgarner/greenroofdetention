@@ -3,7 +3,6 @@ import IntroColumn from "./intro-column";
 export default function IntroRow(props){
 
   const row = Array.isArray(props.row) ? props.row : [];
-  console.log('row',row)
 
   const col0 = row[0] ? row[0] : {};
   const col1 = row[1] ? row[1] : {};
