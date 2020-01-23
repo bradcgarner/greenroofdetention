@@ -14,7 +14,7 @@ import { fontsToLoad, accentFontColor, accentFontColorHover, green, red } from '
  * ALL OTHER COMMENTS ARE IN-LINE
  */
 
-const xyz = 'https://purple-roof.xyz'
+const xyz = 'https://greenroofdetention.xyz'
 
 const thisUrl = process.env.THIS_URL;
 const thisDomain = process.env.THIS_DOMAIN;

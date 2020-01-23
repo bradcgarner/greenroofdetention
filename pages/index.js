@@ -22,16 +22,12 @@ export default class Index extends React.Component {
 
   render() {
 
-    const intro = Array.isArray(content.intro) ? content.intro : [] ;
-
     return <Frame 
       hideHeader={true} 
       meta={content.index.meta}
       toggleModal={this.toggleModal} >
       <Landing />
-      <h1>{content.tagline}</h1>
-      <Intro
-       rows={intro} />
+      <Intro />
       <Concepts/>
       <PartnerLogos/>
       <ProductContent/>
