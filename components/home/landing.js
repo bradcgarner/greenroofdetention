@@ -11,25 +11,25 @@ export default function Landing(props) {
 
   return <header className='landing'>
     <div className='block block-1'>
-      <h2>Green</h2>
+      <div className='block-1a'>
+        <h2 className='title'>Green</h2>
+      </div>
     </div>
     <div className='block block-2'>
-      <h2>Roof</h2>
+      <h2 className='title'>Roof</h2>
     </div>
     <div className='block block-3'>
-      <h2>Detention</h2>
+      <h2 className='title'>Detention</h2>
     </div>
     <div className='block block-4'>
-      <h2>Sustainable Stormwater Management</h2>
+      <h2 className='subtitle subtitle-black'>Sustainable Stormwater Management</h2>
     </div>
     <div className='block block-5'>
-      <h2>x</h2>
     </div>
     <div className='block block-6'>
-      <h2>Detention: Delay</h2>
+      <h2 className='subtitle '>Detention = Delay</h2>
     </div>
     <div className='block block-7'>
-      <h2>y</h2>
     </div>
     <style jsx>{`
       .landing {
@@ -42,27 +42,69 @@ export default function Landing(props) {
       .block {
         width: 100%;
         height: 30vh;
+        align-items: center;
+        justify-content: center;
       }
       .block-1 {
+        flex-direction: column;
+        justify-content: flex-start;
         background-color: green;
+        background-image: url(https://cdn.buttercms.com/yANuXPsMTRmRD6aThx3W);
+        background-size: 800px 800px;
+      }
+      .block-1a {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
       }
       .block-2 {
         background-color: gray;
+        background-image: url(https://cdn.buttercms.com/lfiu1H7R5WYyuTI05U9s);
+        background-size: 500px 300px;
       }
       .block-3 {
         background-color: blue;
+        background-image: url(https://cdn.buttercms.com/naLRnlqxSLG75PgqA69E);
+        background-size: 700px 400px;
       }
       .block-4 {
         background-color: purple;
+        background-image: url(https://cdn.buttercms.com/97F8GFzJQvOlPEuFrUiN);
+        background-size: 500px 300px;
       }
       .block-5 {
         display: none;
+        background-image: url(https://cdn.buttercms.com/pnRe5HwrRwaOskKRcnlg);
+        background-size: 800px 800px;
       }
       .block-6 {
         background-color: pink;
+        background-image: url(https://cdn.buttercms.com/GKkkCiccTaCOFMdQCJnz);
+        background-size: 500px 500px;
       }
       .block-7 {
         display: none;
+        background-image: url(https://cdn.buttercms.com/WvleetdvTwWZLpJNRHdZ);
+        background-size: 500px 500px;
+      }
+      .title,
+      .subtitle {
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: rgba(0,0,0,0.2);
+      }
+      .title {
+        font-size: 90px;
+      }
+      .subtitle {
+        font-size: 50px;
+      }
+      .subtitle-black {
+        color: #474643;
       }
       @media(min-width: 500px){
         .landing {
@@ -77,6 +119,9 @@ export default function Landing(props) {
           width: ${col1}%;
           height: ${row1+row2}%;
           background-color: green;
+        }
+        .block-1a {
+          height: 50%;
         }
         .block-2 {
           top: 0;

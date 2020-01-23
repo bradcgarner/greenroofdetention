@@ -192,7 +192,7 @@ export default class Frame extends React.Component {
           <Header /> ;
 
     const thisUrl = process.env.THIS_URL;
-    const faviconPath = `${thisUrl}/static/`;
+    const faviconPath = `${thisUrl}/`;
 
     const footer = this.state.showFooter ?
       <Footer 
@@ -235,17 +235,26 @@ export default class Frame extends React.Component {
         <meta name    ='twitter:image:alt'                           content={meta.alt}/>
         
         <meta name="google-site-verification" content={process.env.GOOGLE_SITE_VERIF} />
+        
+        {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="manifest" href="/public/site.webmanifest"/>
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+        <meta name="msapplication-TileColor" content="#00a300"/>
+        <meta name="theme-color" content="#ff0000"/> */}
+
 
         <link rel="icon" type="image/x-icon" href={`${faviconPath}favicon.ico`} />
-        <link rel="apple-touch-icon" sizes="180x180" href={`${faviconPath}apple-touch-icon.png`} />
-        <link rel="icon" type="image/png" sizes="32x32" href={`${faviconPath}favicon-32x32.png`} />
-        <link rel="icon" type="image/png" sizes="16x16" href={`${faviconPath}favicon-16x16.png`} />
-        <link rel="manifest" href={`${faviconPath}site.webmanifest`} />
-        <link rel="mask-icon" href={`${faviconPath}safari-pinned-tab.svg`} color="#8bad33"/>
-        <meta name="msapplication-TileColor" content="#8bad33"/>
-        <meta name="theme-color" content="#ffffff"/>
+        <link rel="apple-touch-icon" sizes="180x180" href={`${faviconPath}apple-touch-icon.png`}/>
+        <link rel="icon" type="image/png" sizes="32x32" href={`${faviconPath}favicon-32x32.png`}/>
+        <link rel="icon" type="image/png" sizes="16x16" href={`${faviconPath}favicon-16x16.png`}/>
+        <link rel="manifest" href={`/site.webmanifest`}/>
+        <link rel="mask-icon" href={`${faviconPath}safari-pinned-tab.svg`} color="#73308a"/>
+        <meta name="msapplication-TileColor" content="#00a300"/>
+        <meta name="theme-color" content="#ffffff" />
 
-        <title>Green Roof Diagnostics</title>
+        <title>Green Roof Detention</title>
       </Head>
       {gtmNoScript}
       <style jsx global>{`

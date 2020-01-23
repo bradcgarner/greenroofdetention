@@ -64,7 +64,7 @@ app.prepare()
     });
 
     const robotsOptions = {
-      root: __dirname + '/static/',
+      root: __dirname + '/public/',
       headers: {
         'Content-Type': 'text/plain;charset=UTF-8',
       }
@@ -74,7 +74,7 @@ app.prepare()
     ));
 
     const xmlOptions = {
-      root: __dirname + '/static/',
+      root: __dirname + '/public/',
       headers: {
         'Content-Type': 'text/xml;charset=UTF-8',
       }
@@ -87,7 +87,7 @@ app.prepare()
     ));
 
     const jsonOptions = {
-      root: __dirname + '/static/',
+      root: __dirname + '/public/',
       headers: {
         'Content-Type': 'application/json;charset=UTF-8',
       }
@@ -97,7 +97,7 @@ app.prepare()
     ));
 
     const icoOptions = {
-      root: __dirname + '/static/',
+      root: __dirname + '/public/',
       headers: {
         'Content-Type': 'image/ico',
       }
@@ -107,7 +107,7 @@ app.prepare()
     ));
 
     const imageOptions = {
-      root: __dirname + '/static/',
+      root: __dirname + '/public/',
       headers: {
         'Content-Type': 'image/png',
       }
@@ -135,7 +135,7 @@ app.prepare()
     ));
 
     const svgOptions = {
-      root: __dirname + '/static/',
+      root: __dirname + '/public/',
       headers: {
         'Content-Type': 'image/svg+xml',
       }

@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /privacy/
 Disallow: /meta__check/

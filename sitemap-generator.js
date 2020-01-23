@@ -19,7 +19,7 @@ const staticXmlArr = staticJsArr.map(p=>{
 
 const xmlString = staticXmlArr.join(' ');
 
-fs.writeFile('static/sitemap.xml', xmlString, function (err) {
+fs.writeFile('public/sitemap.xml', xmlString, function (err) {
   if (err) throw err;
   console.log('Generated sitemap.xml');
 });
