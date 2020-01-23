@@ -97,7 +97,7 @@ export default class Header extends React.Component {
           .nav-link {
             color: ${green};
             text-decoration: none;
-            width: 100px;
+            width: 80px;
             text-align: center;
             justify-content: center;
             align-items: center;

@@ -1,12 +1,4 @@
-import { calcMinimumWindowDimensions } from 'browser-helpers';
-
 export default function Landing(props) {
-
-  const win = typeof window !== 'undefined' ? window : undefined;
-  const {
-    cssWidthOuter,
-    cssHeightOuter,
-  } = calcMinimumWindowDimensions(win);
 
   const col1 = 30;
   const col2 = 30;
@@ -15,33 +7,26 @@ export default function Landing(props) {
   const row2 = 33;
   const row3 = 100 - row1 - row2;
 
-  const block1Url = cssWidthOuter > 500 ? 
-  'https://cdn.buttercms.com/1NrMphJTsaLGKDZjnCqQ':
-  'https://cdn.buttercms.com/5ZycVJuTqiWy1Hb8BHB8';
+  const block1WideUrl = 'https://cdn.buttercms.com/1NrMphJTsaLGKDZjnCqQ';
+  const block1NarrUrl = 'https://cdn.buttercms.com/5ZycVJuTqiWy1Hb8BHB8';
 
-  const block2Url = cssWidthOuter > 500 ? 
-  'https://cdn.buttercms.com/Dct0o0etSWy5yRKMOlFa':
-  'https://cdn.buttercms.com/jN4sfA8PRTimqY5HNEEr';
+  const block2WideUrl = 'https://cdn.buttercms.com/Dct0o0etSWy5yRKMOlFa';
+  const block2NarrUrl = 'https://cdn.buttercms.com/jN4sfA8PRTimqY5HNEEr';
 
-  const block3Url = cssWidthOuter > 500 ? 
-  'https://cdn.buttercms.com/KjjyItcQ3CuyxJGDJ2TZ':
-  'https://cdn.buttercms.com/aY0Zvwb2SLWggmOBhc1S';
+  const block3WideUrl = 'https://cdn.buttercms.com/KjjyItcQ3CuyxJGDJ2TZ';
+  const block3NarrUrl = 'https://cdn.buttercms.com/aY0Zvwb2SLWggmOBhc1S';
 
-  const block4Url = cssWidthOuter > 500 ? 
-  'https://cdn.buttercms.com/bcbQqRRhm4NdJz0bfxwD':
-  'https://cdn.buttercms.com/VsIHxuTGQOWPqckDYeoI';
+  const block4WideUrl = 'https://cdn.buttercms.com/bcbQqRRhm4NdJz0bfxwD';
+  const block4NarrUrl = 'https://cdn.buttercms.com/VsIHxuTGQOWPqckDYeoI';
 
-  const block5Url = cssWidthOuter > 500 ? 
-  'https://cdn.buttercms.com/KRlKyS7XRpGN5o7w0P8f':
-  'https://cdn.buttercms.com/C3HlX9DySwaDuZOZPGDp';
+  const block5WideUrl = 'https://cdn.buttercms.com/KRlKyS7XRpGN5o7w0P8f';
+  const block5NarrUrl = 'https://cdn.buttercms.com/C3HlX9DySwaDuZOZPGDp';
 
-  const block6Url = cssWidthOuter > 500 ? 
-  'https://cdn.buttercms.com/xUL9BI5Qg1ntxPelmw2g':
-  'https://cdn.buttercms.com/fANOhN24TPxUyHxAihBt';
+  const block6WideUrl = 'https://cdn.buttercms.com/xUL9BI5Qg1ntxPelmw2g';
+  const block6NarrUrl = 'https://cdn.buttercms.com/fANOhN24TPxUyHxAihBt';
 
-  const block7Url = cssWidthOuter > 500 ? 
-  'https://cdn.buttercms.com/BfSUywOQQ1GWCnLNmsXB':
-  'https://cdn.buttercms.com/tTfOWMCUQCWZROeOKc35';
+  const block7WideUrl = 'https://cdn.buttercms.com/BfSUywOQQ1GWCnLNmsXB';
+  const block7NarrUrl = 'https://cdn.buttercms.com/tTfOWMCUQCWZROeOKc35';
   
   return <header className='landing'>
     <div className='block block-1'>
@@ -84,7 +69,7 @@ export default function Landing(props) {
       .block-1 {
         flex-direction: column;
         justify-content: flex-start;
-        background-image: url(${block1Url});
+        background-image: url(${block1NarrUrl});
       }
       .block-1a {
         width: 100%;
@@ -93,25 +78,25 @@ export default function Landing(props) {
         justify-content: center;
       }
       .block-2 {
-        background-image: url(${block2Url});
+        background-image: url(${block2NarrUrl});
       }
       .block-3 {
-        background-image: url(${block3Url});
+        background-image: url(${block3NarrUrl});
       }
       .block-4 {
-        background-image: url(${block4Url});
+        background-image: url(${block4NarrUrl});
       }
       .block-5 {
         display: none;
-        background-image: url(${block5Url});
+        background-image: url(${block5NarrUrl});
       }
       .block-6 {
         background-color: pink;
-        background-image: url(${block6Url});
+        background-image: url(${block6NarrUrl});
       }
       .block-7 {
         display: none;
-        background-image: url(${block7Url});
+        background-image: url(${block7NarrUrl});
       }
       .title,
       .subtitle {
@@ -124,6 +109,9 @@ export default function Landing(props) {
       }
       .title {
         font-size: 90px;
+      }
+      .block-3 .title {
+        font-size: 80px;
       }
       .subtitle {
         font-size: 50px;
@@ -144,6 +132,7 @@ export default function Landing(props) {
           left: 0;
           width: ${col1}%;
           height: ${row1+row2}%;
+          background-image: url(${block1WideUrl});
         }
         .block-1a {
           height: 50%;
@@ -153,18 +142,24 @@ export default function Landing(props) {
           left: ${col1}%;
           width: ${col2}%;
           height: ${row1}%;
+          background-image: url(${block2WideUrl});
         }
         .block-3 {
           top: 0;
           right: 0;
           width: ${col3}%;
           height: ${row1}%;
+          background-image: url(${block3WideUrl});
+        }
+        .block-3 .title {
+          font-size: 90px;
         }
         .block-4 {
           top: ${row1}%;
           left: ${col1}%;
           width: ${col2}%;
           height: ${row2}%;
+          background-image: url(${block4WideUrl});
         }
         .block-5 {
           display: flex;
@@ -172,12 +167,14 @@ export default function Landing(props) {
           right: 0;
           width: ${col3}%;
           height: ${row2+row3}%;
+          background-image: url(${block5WideUrl});
         }
         .block-6 {
           top: ${row1+row2}%;
           left: 0;
           width: ${col1}%;
           height: ${row3}%;
+          background-image: url(${block6WideUrl});
         }
         .block-7 {
           display: flex;
@@ -185,6 +182,7 @@ export default function Landing(props) {
           left: ${col1}%;
           width: ${col2}%;
           height: ${row3}%;
+          background-image: url(${block7WideUrl});
         }
       }
     `}</style>

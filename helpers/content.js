@@ -3,6 +3,7 @@ import {
   CaretUp
 } from '../components/graphics/icons';
 import { fontsToLoad, accentFontColor, accentFontColorHover, green, red } from './common-styles';
+import ImageContainer from '../components/home/image-container';
 
 /*
  * This file - with few, small exceptions - includes ALL "static" content for greenroofdetention.com, i.e. all content that is not an image or file.
@@ -52,47 +53,82 @@ export default {
 
   tagline: 'greenroofdetention.com is a clearinghouse of green roof solutions that provide stormwater detention. ',
 
-  intro: [
-    [
-      {
-        p: 'Both retention and detention are important stormwater management strategies. Green roofs have traditionally only offered retention. This site lists solutions that offer detention AND retention. ',
-        src: 'https://cdn.buttercms.com/JbXv6qWuR8urwkSr1mtv',
-        alt: '******SOME IMAGE********',
-      },
-      {
-        p: [
-          'Stormwater retention is preventing the occurrence of runoff, by capturing water and allowing plants to evaporate it into the atmosphere. The video series at purple-roof.com/retention-and-detention (which Green Roof Diagnostics assisted with) does a good job at explaining the differences and importance of the two phenomena. ',
-          'Stormwater detention is temporarily storing stormwater, then allowing it to drain later. Detention has always been essential to stormwater management. Why? Because detention is reliable. The physics is quite simple. ',
-          'Retention requires storage that empties very slowly (5-10 days). If more rain occurs than storage, runoff is uncontrolled. If rain occurs after the green roof is wet, runoff is uncontrolled, as if the green roof were not there. Can this be solved by just increasing retention storage? No. Emptying retention volume relies on the weather, and the sun and wind will only remove so much water. ',
-        ],
-      },
-    ],
-
-    [
-      {
-        p: 'Detention requires storage that empties slowly, but much more rapidly than retention (usually 6-24 hours vs 5-10 days). Emptying detention storage relies on gravity, or possibly some mechanics, not the weather. This makes detention far more reliable, which is why hydrologists worldwide use detention as their #1 tool. ',
-      },
-      {
-        src: 'https://cdn.buttercms.com/JbXv6qWuR8urwkSr1mtv',
-        alt: '******SOME IMAGE********',
-      },
-    ],
-    [
-      {
-        h: 'Why the roof?',
-        p: 'Cities across the globe are dealing with stormwater management crises. Around 40% of the surface are of many cities is rooftop. Around another 40% of the area of cities is pavement. With at least 80% of most cities being covered in impervious surfaces, we need to be creative in dealing with stormwater. The roof is a great opportunity to manage stormwater. ',
-      },
-      {
-        p: [
-          'First, the roof is the highest elevation of any watershed. Dealing with runoff from the roof prevents problems rather than managing problems downstream. ',
-          
-          'Second, using green roofs to manage stormwater on rooftops opens the door to compounding benefits offered by green roofs... at no extra charge! These benefits include habitat creation, urban heat island mitigation, extending the life of the roof membrane, reducing cooling costs, and aesthetics. ',
-
-          'Further, unlike stormwater tanks, green roofs reduce stormwater runoff volume through retention. Volume reduction is a vital aspect of urban stormwater management. '
-        ],
-      },
-    ],
-   
+  column1: [
+    {
+      element: 'text',
+      text: 'Both retention and detention are important stormwater management strategies. Green roofs have traditionally only offered retention. This site lists solutions that offer detention AND retention. ',
+    },
+    {
+      element: 'component',
+      component: <div key='image-1' className='image-outer-container'>
+        <div className='image-inner-container'>
+          <ImageContainer
+            src ='https://cdn.buttercms.com/JbXv6qWuR8urwkSr1mtv'
+            alt= '******SOME IMAGE********'
+            caption = '' />
+        </div>
+        <style jsx>{`
+          .image-outer-container {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+          }
+          .image-inner-container {
+            max-width: 500px;
+          }
+        `}</style>  
+      </div>
+    },
+    {
+      element: 'text',
+      text: [
+        'Stormwater retention is preventing the occurrence of runoff, by capturing water and allowing plants to evaporate it into the atmosphere. The video series at purple-roof.com/retention-and-detention (which Green Roof Diagnostics assisted with) does a good job at explaining the differences and importance of the two phenomena. ',
+      ],
+    },
+  ],
+  column2: [
+    {
+      element: 'text',
+      text: [
+        'Stormwater detention is temporarily storing stormwater, then allowing it to drain later. Detention has always been essential to stormwater management. Why? Because detention is reliable. The physics is quite simple. ',
+        'Retention requires storage that empties very slowly (5-10 days). If more rain occurs than storage, runoff is uncontrolled. If rain occurs after the green roof is wet, runoff is uncontrolled, as if the green roof were not there. Can this be solved by just increasing retention storage? No. Emptying retention volume relies on the weather, and the sun and wind will only remove so much water. ',
+        'Detention requires storage that empties slowly, but much more rapidly than retention (usually 6-24 hours vs 5-10 days). Emptying detention storage relies on gravity, or possibly some mechanics, not the weather. This makes detention far more reliable, which is why hydrologists worldwide use detention as their #1 tool. ',
+      ],
+    },
+    {
+      element: 'component',
+      component: <div key='image-2' className='image-outer-container'>
+        <div className='image-inner-container'>
+          <ImageContainer
+            src ='https://cdn.buttercms.com/JbXv6qWuR8urwkSr1mtv'
+            alt= '******SOME IMAGE********'
+            caption = '' />
+        </div>
+        <style jsx>{`
+          .image-outer-container {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+          }
+          .image-inner-container {
+            max-width: 500px;
+          }
+        `}</style>  
+      </div>
+    },
+    {
+      element: 'h2',
+      text: 'Why the roof?'
+    },
+    {
+      element: 'text',
+      text: [
+        'Cities across the globe are dealing with stormwater management crises. Around 40% of the surface are of many cities is rooftop. Around another 40% of the area of cities is pavement. With at least 80% of most cities being covered in impervious surfaces, we need to be creative in dealing with stormwater. The roof is a great opportunity to manage stormwater. ',
+        'First, the roof is the highest elevation of any watershed. Dealing with runoff from the roof prevents problems rather than managing problems downstream. ',
+        'Second, using green roofs to manage stormwater on rooftops opens the door to compounding benefits offered by green roofs... at no extra charge! These benefits include habitat creation, urban heat island mitigation, extending the life of the roof membrane, reducing cooling costs, and aesthetics. ',
+        'Further, unlike stormwater tanks, green roofs reduce stormwater runoff volume through retention. Volume reduction is a vital aspect of urban stormwater management. '
+      ],
+    },
   ],
 
 //   Pros of blue-green:
