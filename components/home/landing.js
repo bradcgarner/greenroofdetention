@@ -37,18 +37,17 @@ export default function Landing(props) {
         position: relative;
         flex-direction: column;
         background-size: cover;
-        background-color: red;
       }
       .block {
         width: 100%;
         height: 30vh;
         align-items: center;
         justify-content: center;
+        background-color: #ccc;
       }
       .block-1 {
         flex-direction: column;
         justify-content: flex-start;
-        background-color: green;
         background-image: url(https://cdn.buttercms.com/yANuXPsMTRmRD6aThx3W);
         background-size: 800px 800px;
       }
@@ -59,17 +58,14 @@ export default function Landing(props) {
         justify-content: center;
       }
       .block-2 {
-        background-color: gray;
         background-image: url(https://cdn.buttercms.com/lfiu1H7R5WYyuTI05U9s);
         background-size: 500px 300px;
       }
       .block-3 {
-        background-color: blue;
         background-image: url(https://cdn.buttercms.com/naLRnlqxSLG75PgqA69E);
         background-size: 700px 400px;
       }
       .block-4 {
-        background-color: purple;
         background-image: url(https://cdn.buttercms.com/97F8GFzJQvOlPEuFrUiN);
         background-size: 500px 300px;
       }
