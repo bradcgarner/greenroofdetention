@@ -1062,11 +1062,11 @@ export default {
     '404': 'Sorry, but we didn\'t find that page.',
     error: 'Sorry, but there was a problem loading this page.',
     meta: {
-      title:       'Green Roof Diagnostics',
-      description: 'Green Roof Diagnostics provides unbiased, scientific research for the green infrastructure industry.',
+      title:       'Green Roof Detention',
+      description: 'Green Roof Detention provides unbiased, scientific research for the green infrastructure industry.',
       url:         thisUrl,
       image:       'https://cdn.buttercms.com/BO4Yk7JnRL2iCLXhEFeG',
-      alt:    'Green Roof Diagnostics',
+      alt:    'Green Roof Detention',
     },
   },
 };

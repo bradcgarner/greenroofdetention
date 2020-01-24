@@ -21,8 +21,8 @@ export default function Intro(props){
     color:    #8bad33;
   `;
 
-  return <div className='intro-container'>
-    <div className='bordered-div'>
+  return <div id='intro-div' className='intro-container'>
+    <div className='bordered-div bordered-div-top'>
       <h1>{content.tagline}</h1>
     </div>
     <div className='two-columns'>
@@ -57,6 +57,9 @@ export default function Intro(props){
       }
       .border-bottom-only {
         border-top: none;
+      }
+      .bordered-div-top {
+        margin-top: 70px;
       }
       h1 {
         width: 100%;

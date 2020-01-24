@@ -1,4 +1,15 @@
+import { ChevronDoubleDown } from "../graphics/icons";
+import { smoothScroll } from '../../helpers/smooth-scroll';
+import { accentFontColorHover } from "../../helpers/common-styles";
+
 export default function Landing(props) {
+
+  const windowScroll = () => {
+    if(typeof window === 'undefined') {
+      return;
+    }
+    smoothScroll.scrollTo('intro-div');
+  }
 
   const col1 = 30;
   const col2 = 30;
@@ -28,7 +39,8 @@ export default function Landing(props) {
   const block7WideUrl = 'https://cdn.buttercms.com/BfSUywOQQ1GWCnLNmsXB';
   const block7NarrUrl = 'https://cdn.buttercms.com/tTfOWMCUQCWZROeOKc35';
   
-  return <header className='landing'>
+  return <header className='landing'
+    onClick={()=>windowScroll()}>
     <div className='block block-1'>
       <div className='block-1a'>
         <h2 className='title'>Green</h2>
@@ -50,6 +62,13 @@ export default function Landing(props) {
     </div>
     <div className='block block-7'>
     </div>
+    <div className='arrow-container'>
+      <div className='arrow-down'
+        onClick={()=>windowScroll()}>
+        <ChevronDoubleDown style={{height:50, width:50}}/>
+      </div>
+    </div>
+    
     <style jsx>{`
       .landing {
         width: 100vw;
@@ -184,6 +203,20 @@ export default function Landing(props) {
           height: ${row3}%;
           background-image: url(${block7WideUrl});
         }
+      }
+      .arrow-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .arrow-down {
+        color: white;
+      }
+      .arrow-down:hover {
+        color: ${accentFontColorHover};
       }
     `}</style>
   </header>
