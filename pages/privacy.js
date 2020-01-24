@@ -1,7 +1,7 @@
-import Frame              from '../components/_general/_frame.js';
-import Modal              from '../components/modal';
-import PrivacyContent     from '../components/privacy/content';
-import { getMeta }        from '../helpers/meta';
+import Frame               from '../components/_general/_frame.js';
+import Modal               from '../components/_general/modal';
+import PrivacyContent      from '../components/privacy/content';
+import { getMeta }         from '../helpers/meta';
 import { fireNewPageView } from '../helpers/tag-manager.js';
 
 export default class Privacy extends React.Component {

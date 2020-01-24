@@ -1,12 +1,12 @@
 import React           from 'react';
 import Frame           from '../components/_general/_frame';
-import Landing         from '../components/home/landing';
-import ProductContent  from '../components/home/product-content';
+import Modal           from '../components/_general/modal';
 import content         from '../helpers/content';
 import { 
   fireNewPageView }    from '../helpers/tag-manager';
 import Intro           from '../components/home/intro';
-import Modal           from '../components/_general/modal';
+import Landing         from '../components/home/landing';
+import ProductContent  from '../components/home/product-content';
 
 export default class Index extends React.Component {
   constructor(props){

@@ -1,8 +1,8 @@
+import Router       from 'next/router';
+import { detect }   from 'detect-browser';
 import Frame        from '../components/_general/_frame.js';
 import content      from '../helpers/content';
 import { getMeta }  from '../helpers/meta.js';
-import Router       from 'next/router';
-import { detect }   from 'detect-browser';
 import { fireNewPageView } from '../helpers/tag-manager.js';
 
 export default class Error extends React.Component {

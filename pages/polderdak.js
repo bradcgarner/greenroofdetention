@@ -1,6 +1,6 @@
 import Frame              from '../components/_general/_frame.js';
+import BlankContent       from '../components/_general/_blank-content';
 import content            from '../helpers/content';
-import BlankContent       from '../components/_blank-content';
 
 export default class Polderdak extends React.Component {
   constructor(props){
