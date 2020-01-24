@@ -1,6 +1,7 @@
 import content from '../../helpers/content';
 import { createElements } from '../../helpers/format-html';
 import { globalHeaderColor, fontReading } from '../../helpers/common-styles';
+import PartnerLogos from './partner-logos';
 
 export default function Intro(props){
 
@@ -21,7 +22,7 @@ export default function Intro(props){
   `;
 
   return <div className='intro-container'>
-    <div className='tagline-div'>
+    <div className='bordered-div'>
       <h1>{content.tagline}</h1>
     </div>
     <div className='two-columns'>
@@ -32,12 +33,19 @@ export default function Intro(props){
         {createElements(content.column2, defQuoteStyle, defEmStyle)}
       </div>
     </div>
+    <div className='bordered-div'>
+      {createElements(content.concepts, defQuoteStyle, defEmStyle)}
+    </div>
+    <div className='bordered-div border-bottom-only'>
+      {createElements(content.companyIntro, defQuoteStyle, defEmStyle)}
+      <PartnerLogos/>
+    </div>
     <style jsx>{`
       .intro-container {
         flex-direction: column;
         align-items: center;
       }
-      .tagline-div {
+      .bordered-div {
         width: 95%;
         border-top: 5px solid #1e6d05;
         border-bottom: 5px solid #1e6d05;
@@ -45,10 +53,14 @@ export default function Intro(props){
         padding-bottom: 25px;
         align-items: center;
         margin-top: 15px;
+        flex-direction: column;
+      }
+      .border-bottom-only {
+        border-top: none;
       }
       h1 {
         width: 100%;
-        font-size: 32px;
+        font-size: 30px;
         font-weight: bold;
         text-align: center;
       }

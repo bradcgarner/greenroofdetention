@@ -1,44 +1,27 @@
-import Link              from 'next/link';
 import LazyLoad          from 'react-lazyload';
 import { 
   disabledButtonColor,
   purple, }              from '../../helpers/common-styles';
-import { partnerList }   from '../../helpers/partners/partners-input';
-import {
-  Envelope,
-  Globe }                from '../graphics/icons';
+import { partnerList }   from '../../helpers/partners-input';
 
 export default function PartnerLogos(){
 
   const logos = Array.isArray(partnerList) ? partnerList.map((p,i)=>{
 
-    if(p.exclude) { return null ;} // eliminates the 'N/A' from here
-
-    return <div key={i} className='card'>
-      <div className='image-container' >
+    return <a key={i} href={p.productUrl} target='_blank'
+        className='link'>
+          <div key={i} className='card'>
         <LazyLoad height={'100%'} offset={100}>
           <img className='image' 
             src={p.logo}/>
         </LazyLoad>
+        <p className='name'>
+          {p.nameBroken || p.name}
+        </p>
+        <p className='product'>
+          {p.productName}
+        </p>
       </div>
-      <p className='name'>
-        {p.nameBroken || p.name}
-      </p>
-      <p className='product'>
-        {p.productName}
-      </p>
-      <div className='links-container'>
-        <Link href={`/contact?cc=${p.code}`}>
-          <div className='link'>
-            <Envelope style={{height: 20, width: 20}}/>
-          </div>
-        </Link>
-        <a href={p.productUrl} target='_blank'
-          className='link'>
-          <Globe style={{height: 20, width: 20}}/>
-        </a>
-      </div>
-
       <style jsx>{`
         .card {
           flex-direction: column;
@@ -58,14 +41,6 @@ export default function PartnerLogos(){
           .card {
             width: 140px;
           }
-        }
-        .image-container {
-          display: flex;
-          align-items: flex-end;
-          justify-content: center;
-          width: 100%;
-          height: 80px;
-          margin-bottom: 5px;
         }
         .image {
           width: 70%;
@@ -103,11 +78,6 @@ export default function PartnerLogos(){
             height: 40px;
           }
         }
-        .links-container {
-          width: 100%;
-          margin-top: 5px;
-          justify-content: space-around;
-        }
         .link {
           cursor: pointer;
           color: ${disabledButtonColor};
@@ -116,7 +86,7 @@ export default function PartnerLogos(){
           color: ${purple};
         }
       `}</style>
-    </div>
+    </a>
   }) : null ;
   
   return <div className='logos-container'>
@@ -125,7 +95,6 @@ export default function PartnerLogos(){
       .logos-container {
         flex-wrap: wrap;
         justify-content: center;
-      }
     `}</style>
   </div>
 }

@@ -6,8 +6,6 @@ import content         from '../helpers/content';
 import { 
   fireNewPageView }    from '../helpers/tag-manager';
 import Intro           from '../components/home/intro';
-import PartnerLogos    from '../components/home/partner-logos';
-import Concepts        from '../components/home/concepts';
 
 export default class Index extends React.Component {
   constructor(props){
@@ -28,8 +26,6 @@ export default class Index extends React.Component {
       toggleModal={this.toggleModal} >
       <Landing />
       <Intro />
-      <Concepts/>
-      <PartnerLogos/>
       <ProductContent/>
     </Frame>
   }
