@@ -1,4 +1,4 @@
-import Frame              from '../components/_frame.js';
+import Frame              from '../components/_general/_frame.js';
 import Modal              from '../components/modal';
 import PrivacyContent     from '../components/privacy/content';
 import { getMeta }        from '../helpers/meta';

@@ -12,7 +12,9 @@ export const consentFontColor =       '#fff';
 export const fontOnColorColor =       'white';
 export const fontOnColorColorHover =  '#efe086';
 export const disabledButtonColor   =  '#ccc';
-
+export const carouselDotColor =       '#bbb';
+export const carouselDotColorActive = '#717171';
+export const carouselArrowColor =     'white';
 export const accentFontColor =        '#73308a';
 export const accentFontColorHover =   '#8d798d';
 export const purple =                 '#73308a';
@@ -63,7 +65,7 @@ export const fontsToLoad = fontsToLoadArr.join('%7C'); // encoded pipe | charact
 
 export const section = `
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   border-bottom: 1px solid #ddd;
   padding: 70px 20px 20px 20px;
   overflow: hidden;

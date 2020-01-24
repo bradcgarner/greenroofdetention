@@ -37,6 +37,7 @@ export default function Footer(props) {
         flex-direction: column;
         align-items: center;
         margin-top: 15px;
+        width: 100%;
       }
     `}</style>
   </div>
@@ -83,6 +84,7 @@ export default function Footer(props) {
           display: flex;
           justify-content: space-around;
           align-items: center;
+          flex-wrap: wrap;
         }
         .li {
           width: 120px;
@@ -133,17 +135,17 @@ export default function Footer(props) {
         position: relative;
       }
       
-      @media (min-width: 630px) {
-        .footer {
-          flex-direction: row;
-          padding-bottom: 50px;
-        }
-      }
-      @media (min-width: 900px) {
-        .footer {
-          padding-bottom: 0px;
-        }
-      }
+      // @media (min-width: 630px) {
+      //   .footer {
+      //     flex-direction: row;
+      //     padding-bottom: 50px;
+      //   }
+      // }
+      // @media (min-width: 900px) {
+      //   .footer {
+      //     padding-bottom: 0px;
+      //   }
+      // }
       .copyright {
         position: absolute;
         bottom: 0;

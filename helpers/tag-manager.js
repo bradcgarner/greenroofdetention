@@ -34,7 +34,8 @@ export const fireGtmHover = (label, value) => {
 
 export const navLink           = 'nav-link';
 export const oopsClick         = 'oops-click';
-
+export const carouselNav       = 'carousel-nav';
+export const carouselEnlarge   = 'carousel-enlarge';
 export const privacyAll        = 'privacy-all';
 export const privacyOpen       = 'privacy-open';
 export const privacySave       = 'privacy-save';
