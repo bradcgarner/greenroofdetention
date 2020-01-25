@@ -7,7 +7,8 @@ import {
   }                        from 'browser-helpers';
 import { carouselDotColor, 
   carouselDotColorActive, 
-  accentFontColor }        from '../../helpers/common-styles';
+  accentFontColor, 
+  black}        from '../../helpers/common-styles';
 import { carouselNav, 
   carouselEnlarge }        from '../../helpers/tag-manager';
 import { ExpandAlt }       from '../graphics/icons';
@@ -18,8 +19,8 @@ export default class Carousel extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      solution: this.props.solution || {} ,
-      frames: this.props.solution && Array.isArray(this.props.solution.frames) ? this.props.solution.frames : [] ,
+      partner: this.props.partner || {} ,
+      frames: this.props.partner && Array.isArray(this.props.partner.frames) ? this.props.partner.frames : [] ,
       activeIndex: 0,
       hRatioOfW: 0.65,
       auto: true,
@@ -93,7 +94,7 @@ export default class Carousel extends React.Component {
     const c =  this.state.frames[this.state.activeIndex] || {};
 
     const carouselModal = <ModalCarousel 
-      id={this.state.solution.productHtmlId}
+      id={this.state.partner.code}
       content={c} />
 
     const imageContainer = <div className='image-container'>
@@ -119,7 +120,7 @@ export default class Carousel extends React.Component {
       const activeClass = i === this.state.activeIndex ? 'active' : '' ;
       return <div 
         key={i}
-        id={`${this.state.solution.productHtmlId}-${i}`} 
+        id={`${this.state.partner.code}-${i}`} 
         role='button'
         className={`${carouselNav} ${activeClass} ${c.img}`}
         onClick={()=>this.handleIndexChange(i)} >
@@ -149,25 +150,27 @@ export default class Carousel extends React.Component {
           dir        ='left'
           style      ='fill: white;'
           hoverStyle ='fill: #c12b5b;'
-          className  ={`${carouselNav} ${this.state.solution.productHtmlId} left ${c.img}`}
+          className  ={`${carouselNav} ${this.state.partner.code} left ${c.img}`}
           handleClick={this.handleIndexChange} 
           clickParam ={this.state.activeIndex-1}/>
         <Arrow
           dir         ='right'
           style       ='fill: white;'
           hoverStyle  ='fill: #c12b5b;'
-          className   ={`${carouselNav} ${this.state.solution.productHtmlId} right ${c.img}`}
+          className   ={`${carouselNav} ${this.state.partner.code} right ${c.img}`}
           handleClick ={this.handleIndexChange} 
           clickParam  ={this.state.activeIndex+1}/>
-        <div className={`${carouselEnlarge} ${this.state.solution.productHtmlId} ${this.state.activeIndex} ${c.img}`}
+        <div className={`${carouselEnlarge} ${this.state.partner.code} ${this.state.activeIndex} ${c.img}`}
           onClick={()=>this.props.toggleModal(carouselModal)}>
           <ExpandAlt style={{height: 40, width: 40}}/>
         </div>
-        <div className='logo-container'>
-          <img className='logo'
-            src={this.state.solution.logoUrl}
-            alt={this.state.solution.logoAlt} />
-        </div>
+        <a href={this.state.partner.productUrl} target='_blank'>
+          <div className='logo-container'>
+            <img className='logo'
+              src={this.state.partner.logo}
+              alt={this.state.partner.name} />
+          </div>
+        </a>
       </div>
       <p className='caption'>{c.caption}</p>
       <div className='dots'>
@@ -196,7 +199,7 @@ export default class Carousel extends React.Component {
           font-style: italic;
           font-size: 14px;
           line-height: 17px;
-          height: 40px;
+          height: 80px;
           overflow: hidden;
         }
         .dots {
@@ -222,13 +225,22 @@ export default class Carousel extends React.Component {
           position: absolute;
           bottom: 0;
           right: 0;
-          height: 50px;
-          width: 50px;
+          height: 100px;
+          width: 100px;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          border-top: 1px solid ${black};
+          border-left: 1px solid ${black};
+          cursor: pointer;
+        }
+        .logo-container:hover {
+          opacity: 0.8;
         }
         .logo {
           object-fit: contain;
-          width: 100%;
-          height: 100%;
+          width: 90%;
+          height: 90%;
         }
       `}</style>
     </div>

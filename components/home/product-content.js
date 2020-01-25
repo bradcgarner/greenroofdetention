@@ -4,22 +4,22 @@ import Carousel            from './carousel';
 import { section, 
   backgroundMid }          from '../../helpers/common-styles';
 import { fireGtmHover }    from '../../helpers/tag-manager';
+import { partnerObj } from '../../helpers/partners-input';
 
 export default function ProductContent(props) {
-
-  const solutions = Array.isArray(content.solutions) ? content.solutions : [];
-  
+    
   return <div className='products-container'>
     {
-      solutions.map((solution, i) => {
+      Object.keys(partnerObj).map((code, i) => {
+        const p = partnerObj[code];
         const reverseClass = i % 2 === 0 ? '' : 'reverse';
 
         return <section key={i} 
           className={`section ${reverseClass}`}
-          id={`team-${solution.productHtmlId}`}
-          onMouseEnter={()=>fireGtmHover(solution.productHtmlId)}>
+          id={`team-${p.code}`}
+          onMouseEnter={()=>fireGtmHover(p.code)}>
           <Carousel 
-            solution    = {solution}
+            partner    = {p}
             toggleModal = {props.toggleModal} />
         </section>
       })
@@ -28,6 +28,7 @@ export default function ProductContent(props) {
       .products-container {
         flex-direction: column;
         width: 100vw;
+        margin-top: 25px;
       }
       .section {
         ${section}

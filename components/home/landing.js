@@ -1,5 +1,5 @@
 import { ChevronDoubleDown } from "../graphics/icons";
-import { smoothScroll } from '../../helpers/smooth-scroll';
+import { smoothScroll } from 'browser-helpers';
 import { accentFontColorHover } from "../../helpers/common-styles";
 
 export default function Landing(props) {
