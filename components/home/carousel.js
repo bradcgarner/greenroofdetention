@@ -196,6 +196,7 @@ export default class Carousel extends React.Component {
         }
         .caption {
           width: 90%;
+          margin-left: 5%;
           margin-top: 10px;
           font-weight: normal;
           font-style: italic;
@@ -207,6 +208,7 @@ export default class Carousel extends React.Component {
         @media (min-width: 500px){
           .caption {
             width: 100%;
+            margin-left: 0;
             heiht: 100px;
           }
         }
