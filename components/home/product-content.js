@@ -11,13 +11,31 @@ export default function ProductContent(props) {
   return <div className='products-container'>
     {
       Object.keys(partnerObj).map((code, i) => {
-        const p = partnerObj[code];
+        const p = partnerObj[code] || {};
+        if(!p.useFrames){ return null; }
+        const generalDescription = Array.isArray(p.generalDescription) ?
+          p.generalDescription : [];
+
         const reverseClass = i % 2 === 0 ? '' : 'reverse';
 
         return <section key={i} 
           className={`section ${reverseClass}`}
           id={`team-${p.code}`}
           onMouseEnter={()=>fireGtmHover(p.code)}>
+          
+          <div className='product-header-div'>
+            <h2 className='product-header'>
+              {p.productName} by {p.name}
+            </h2>
+            {
+              generalDescription.map((d,i)=>{
+                return <p className='general-description'>
+                {d}
+              </p>
+              })
+            }
+          </div>
+          
           <Carousel 
             partner    = {p}
             toggleModal = {props.toggleModal} />
@@ -48,6 +66,18 @@ export default function ProductContent(props) {
       }
       .reverse {
         ${backgroundMid}
+      }
+      .product-header-div {
+        max-width: 900px;
+        flex-direction: column;
+      }
+      .product-header {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      .general-description {
+        line-height: 18px;
+        margin-bottom: 5px;
       }
     `}</style>
   </div>

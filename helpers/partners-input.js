@@ -1,11 +1,13 @@
 export const partnerList = [
   {
+    useFrames: true,
     code: 'AH',
     name: 'American Hydrotech',
     link: 'https://www.hydrotechusa.com',
     productName: 'Garden Roof+',
     productUrl: 'https://www.hydrotechusa.com',
     logo: 'https://cdn.buttercms.com/CO9BJ59IRL6RJTYEZ2Xq',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -25,12 +27,14 @@ export const partnerList = [
       ], // end frames
   },
   { 
+    useFrames: true,
     code: 'KU',
     name: 'Knauf Insulation',
     productName: 'Urbanscape Detention Roof',
     productUrl: 'http://www.green-urbanscape.com',
     link: 'http://www.green-urbanscape.com',
     logo: 'https://cdn.buttercms.com/v0qVSnKOTKas1CbJRQM9',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -50,12 +54,14 @@ export const partnerList = [
       ], // end frames
   },
   {
+    useFrames: true,
     code: 'NLSM',
     name: 'Next Level Stormwater Management',
     productName: 'StormCap+ Detention',
     productUrl: 'https://www.nlsm.ca/systems-technical-info/extensive-systems/detention', 
     link: 'https://www.nlsm.ca',
     logo: 'https://cdn.buttercms.com/FiZ181bRHaihV5Cmae4X',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -75,12 +81,14 @@ export const partnerList = [
       ], // end frames
   },
   {
+    useFrames: true,
     code: 'SH',
     name: 'Sempergreen',
     productName: 'Detention Roof',
     productUrl: 'https://www.sempergreen.com',
     link: 'https://www.sempergreen.com',
     logo: 'https://cdn.buttercms.com/s14Lm9n3SiqMc7wktJDb',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -100,6 +108,7 @@ export const partnerList = [
       ], // end frames
   },
   {
+    useFrames: false,
     code: 'RL',
     name: 'Rooflite',
     nameBroken: 'Rooflite', // necessary to allow word wrap where we want it
@@ -107,6 +116,7 @@ export const partnerList = [
     productUrl: 'https://www.rooflitesoil.com/',
     link: 'https://www.rooflitesoil.com/',
     logo: 'https://cdn.buttercms.com/MFYideTQqeEHfAoUd9Ug',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -126,6 +136,7 @@ export const partnerList = [
       ], // end frames
   },
   {
+    useFrames: false,
     code: 'SU',
     name: 'Sempergreen USA',
     nameBroken: 'Sempergreen USA', // necessary to allow word wrap where we want it
@@ -133,6 +144,7 @@ export const partnerList = [
     productUrl: 'https://www.sempergreen.com',
     link: 'https://www.sempergreen.com',
     logo: 'https://cdn.buttercms.com/rztzhRV0Q8WFrnfVrzE1',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -152,12 +164,14 @@ export const partnerList = [
       ], // end frames
   },
   { 
+    useFrames: true,
     code: 'SWCC',
     name: 'Stormwater Capture Co.',
     productName: 'StormCap+',
     productUrl: 'https://stormwatercaptureco.com/products/stormcapdetention', 
     link: 'https://stormwatercaptureco.com',
     logo: 'https://cdn.buttercms.com/Q5CvZv8MQR8lar7KBA1F',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -177,12 +191,14 @@ export const partnerList = [
       ], // end frames
   },
   {
+    useFrames: false,
     code: 'U',
     name: 'Uniseal',
     productName: 'Urbanscape Purple-Roof',
     productUrl: 'http://uniseal.com.sg',
     link: 'http://uniseal.com.sg',
     logo: 'https://cdn.buttercms.com/w5JmYNiTLmYWHRTHcZdQ',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -202,12 +218,14 @@ export const partnerList = [
       ], // end frames
   },
   {
+    useFrames: true,
     code: 'MP',
     name: 'MetroPolder Company',
     productName: 'Polderdak',
     productUrl: 'https://metropolder.com/',
     link: 'https://metropolder.com/',
     logo: 'https://cdn.buttercms.com/veNRY2LRGBnL6rp6BQ9g',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -227,12 +245,14 @@ export const partnerList = [
       ], // end frames
   },
   {
+    useFrames: true,
     code: 'O',
     name: 'Optigreen',
-    productName: 'Optigreen',
+    productName: 'Optigreen Blue-Green Roof',
     productUrl: 'https://www.optigreen.com/',
     link: 'https://www.optigreen.com/',
     logo: 'https://cdn.buttercms.com/QCCRKDSwSZngFS8b6cnI',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
@@ -252,12 +272,14 @@ export const partnerList = [
       ], // end frames
   },
   {
+    useFrames: true,
     code: 'RM',
     name: 'Roofmeadow',
     productName: 'Custom Design and Engineering Solutions',
     productUrl: 'https://www.roofmeadow.com/',
     link: 'https://www.roofmeadow.com/',
     logo: 'https://cdn.buttercms.com/Vccw2vaHSfGFfvaRAZXF',
+    generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
       {
         img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
