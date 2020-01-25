@@ -233,14 +233,20 @@ export default class Carousel extends React.Component {
           position: absolute;
           bottom: 0;
           right: 0;
-          height: 100px;
-          width: 100px;
+          height: 60px;
+          width: 60px;
           align-items: center;
           justify-content: center;
           background-color: white;
           border-top: 1px solid ${black};
           border-left: 1px solid ${black};
           cursor: pointer;
+        }
+        @media (min-width: 500px){
+          .logo-container {
+            height: 100px;
+            width: 100px;
+          }
         }
         .logo-container:hover {
           opacity: 0.8;
