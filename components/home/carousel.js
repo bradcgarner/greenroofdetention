@@ -191,6 +191,8 @@ export default class Carousel extends React.Component {
           border-radius: 2px;
           box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
           z-index: 1;
+          align-items: flex-end;
+          overflow: hidden;
         }
         .caption {
           width: 100%;
@@ -199,13 +201,13 @@ export default class Carousel extends React.Component {
           font-style: italic;
           font-size: 14px;
           line-height: 17px;
-          height: 80px;
+          height: 100px;
           overflow: hidden;
         }
         .dots {
           height: 15px;
           align-self: center;
-          margin-top: 25px;
+          margin-top: 10px;
           flex-shrink: 0;
         }
         .carousel-enlarge {

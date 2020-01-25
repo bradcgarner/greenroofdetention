@@ -132,7 +132,7 @@ export const partnerList = [
     productName: 'Multiple Individual Components',
     productUrl: 'https://www.sempergreen.com',
     link: 'https://www.sempergreen.com',
-    logo: 'https://cdn.buttercms.com/YTk8KX2SpSjBl2YpGnBB',
+    logo: 'https://cdn.buttercms.com/rztzhRV0Q8WFrnfVrzE1',
     frames: [
         {
           img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
