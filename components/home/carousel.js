@@ -195,14 +195,20 @@ export default class Carousel extends React.Component {
           overflow: hidden;
         }
         .caption {
-          width: 100%;
+          width: 90%;
           margin-top: 10px;
           font-weight: normal;
           font-style: italic;
           font-size: 14px;
           line-height: 17px;
-          height: 100px;
+          height: 120px;
           overflow: hidden;
+        }
+        @media (min-width: 500px){
+          .caption {
+            width: 100%;
+            heiht: 100px;
+          }
         }
         .dots {
           height: 15px;
