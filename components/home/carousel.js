@@ -180,7 +180,6 @@ export default class Carousel extends React.Component {
         .outer-container {
           margin-top: 15px;
           flex-direction: column;
-          // height: ${this.state.h + 100}px;
           width: ${this.state.w}px;
         }
         .inner-container {
@@ -189,7 +188,7 @@ export default class Carousel extends React.Component {
           height: ${this.state.h}px;
           width: ${this.state.w}px;
           border-radius: 2px;
-          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
           z-index: 1;
           align-items: flex-end;
           overflow: hidden;
@@ -197,7 +196,7 @@ export default class Carousel extends React.Component {
         .caption {
           width: 90%;
           margin-left: 5%;
-          margin-top: 10px;
+          margin-top: 15px;
           font-weight: normal;
           font-style: italic;
           font-size: 14px;

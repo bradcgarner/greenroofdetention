@@ -29,7 +29,7 @@ export default function ProductContent(props) {
             </h2>
             {
               generalDescription.map((d,i)=>{
-                return <p className='general-description'>
+                return <p key={i} className='general-description'>
                 {d}
               </p>
               })
@@ -68,8 +68,14 @@ export default function ProductContent(props) {
         ${backgroundMid}
       }
       .product-header-div {
-        max-width: 900px;
+        max-width: 90%;
         flex-direction: column;
+      }
+      @media (min-width: 900px){
+        .product-header-div {
+          max-width: 900px;
+          flex-direction: column;
+        }
       }
       .product-header {
         font-size: 24px;

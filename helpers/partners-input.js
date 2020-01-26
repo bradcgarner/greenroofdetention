@@ -174,7 +174,7 @@ export const partnerList = [
     useFrames: false,
     code: 'U',
     name: 'Uniseal',
-    productName: 'Urbanscape Purple-Roof',
+    productName: 'Urbanscape Detention Roof',
     productUrl: 'http://uniseal.com.sg',
     link: 'http://uniseal.com.sg',
     logo: 'https://cdn.buttercms.com/w5JmYNiTLmYWHRTHcZdQ',
