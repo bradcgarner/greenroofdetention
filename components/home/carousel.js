@@ -22,12 +22,12 @@ export default class Carousel extends React.Component {
       partner: this.props.partner || {} ,
       frames: this.props.partner && Array.isArray(this.props.partner.frames) ? this.props.partner.frames : [] ,
       activeIndex: 0,
-      hRatioOfW: 0.65,
       auto: true,
       int: null,
       intFrequency: 5000,
       ready: false,
       cssWidthOuter: 300,
+      hRatioOfW: 0.65,
       hAsVw: 0.75,
       wAsVw: 1,
     };
@@ -180,7 +180,7 @@ export default class Carousel extends React.Component {
         .outer-container {
           margin-top: 15px;
           flex-direction: column;
-          height: ${this.state.h + 100}px;
+          // height: ${this.state.h + 100}px;
           width: ${this.state.w}px;
         }
         .inner-container {

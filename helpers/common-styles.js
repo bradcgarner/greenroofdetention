@@ -18,6 +18,8 @@ export const carouselArrowColor =     'white';
 export const accentFontColor =        '#73308a';
 export const accentFontColorHover =   '#8d798d';
 export const purple =                 '#73308a';
+export const detentionBlue          = '#4c4cff';
+
 export const purpleRGB =              '115,48,138';
 export const headerFontColor =        accentFontColor;
 export const headerFontColorHover =   '#a28ba2';

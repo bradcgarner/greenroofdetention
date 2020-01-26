@@ -10,17 +10,17 @@ export const partnerList = [
     generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
-          img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
+          img: 'https://cdn.buttercms.com/kFDJarusR6zeKC981aCr',
           alt: 'ADD AN ALT TAG',
           caption: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
         },
         {
-          img: 'https://cdn.buttercms.com/lU4tzOQRSsORype2SkIw',
+          img: 'https://cdn.buttercms.com/c0AreJwJRSurCQIjLGo7',
           alt: 'ADD AN ALT TAG',
           caption: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ',
         },
         {
-          img: 'https://cdn.buttercms.com/LAfu0mHWSB6U7LjAmPqp',
+          img: 'https://cdn.buttercms.com/Divi70TTSj6ny5AofgOD',
           alt: 'ADD AN ALT TAG',
           caption: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
         },
@@ -37,19 +37,14 @@ export const partnerList = [
     generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
-          img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
+          img: 'https://cdn.buttercms.com/wYlgCtCKTYmnm7spvpbt',
           alt: 'ADD AN ALT TAG',
           caption: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
         },
         {
-          img: 'https://cdn.buttercms.com/lU4tzOQRSsORype2SkIw',
+          img: 'https://cdn.buttercms.com/XBXhLTepQ2CXVyFsZ9t2',
           alt: 'ADD AN ALT TAG',
           caption: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ',
-        },
-        {
-          img: 'https://cdn.buttercms.com/LAfu0mHWSB6U7LjAmPqp',
-          alt: 'ADD AN ALT TAG',
-          caption: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
         },
       ], // end frames
   },
@@ -64,19 +59,14 @@ export const partnerList = [
     generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
-          img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
+          img: 'https://cdn.buttercms.com/WHlPWINSnGfcdkyafRHa',
           alt: 'ADD AN ALT TAG',
           caption: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
         },
         {
-          img: 'https://cdn.buttercms.com/lU4tzOQRSsORype2SkIw',
+          img: 'https://cdn.buttercms.com/5piB2BU5TOGrgaepBufd',
           alt: 'ADD AN ALT TAG',
           caption: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ',
-        },
-        {
-          img: 'https://cdn.buttercms.com/LAfu0mHWSB6U7LjAmPqp',
-          alt: 'ADD AN ALT TAG',
-          caption: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
         },
       ], // end frames
   },
@@ -91,19 +81,14 @@ export const partnerList = [
     generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
-          img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
+          img: 'https://cdn.buttercms.com/3K4z0hyNT9e8LvhBu6uh',
           alt: 'ADD AN ALT TAG',
           caption: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
         },
         {
-          img: 'https://cdn.buttercms.com/lU4tzOQRSsORype2SkIw',
+          img: 'https://cdn.buttercms.com/CezaO0KxRnqGRTw0OsHu',
           alt: 'ADD AN ALT TAG',
           caption: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ',
-        },
-        {
-          img: 'https://cdn.buttercms.com/LAfu0mHWSB6U7LjAmPqp',
-          alt: 'ADD AN ALT TAG',
-          caption: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
         },
       ], // end frames
   },
@@ -173,21 +158,16 @@ export const partnerList = [
     logo: 'https://cdn.buttercms.com/Q5CvZv8MQR8lar7KBA1F',
     generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
-        {
-          img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
-          alt: 'ADD AN ALT TAG',
-          caption: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
-        },
-        {
-          img: 'https://cdn.buttercms.com/lU4tzOQRSsORype2SkIw',
-          alt: 'ADD AN ALT TAG',
-          caption: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ',
-        },
-        {
-          img: 'https://cdn.buttercms.com/LAfu0mHWSB6U7LjAmPqp',
-          alt: 'ADD AN ALT TAG',
-          caption: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
-        },
+      {
+        img: 'https://cdn.buttercms.com/WHlPWINSnGfcdkyafRHa',
+        alt: 'ADD AN ALT TAG',
+        caption: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
+      },
+      {
+        img: 'https://cdn.buttercms.com/5piB2BU5TOGrgaepBufd',
+        alt: 'ADD AN ALT TAG',
+        caption: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ',
+      },
       ], // end frames
   },
   {
@@ -228,17 +208,17 @@ export const partnerList = [
     generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
-          img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
+          img: 'https://cdn.buttercms.com/MIx0Z1auSt2q7Lzpcs0w',
           alt: 'ADD AN ALT TAG',
           caption: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
         },
         {
-          img: 'https://cdn.buttercms.com/lU4tzOQRSsORype2SkIw',
+          img: 'https://cdn.buttercms.com/eatiFQdS46sGqtkLJ0vc',
           alt: 'ADD AN ALT TAG',
           caption: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ',
         },
         {
-          img: 'https://cdn.buttercms.com/LAfu0mHWSB6U7LjAmPqp',
+          img: 'https://cdn.buttercms.com/deCLG3kxRlCkr078H7MV',
           alt: 'ADD AN ALT TAG',
           caption: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
         },
@@ -255,17 +235,17 @@ export const partnerList = [
     generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
         {
-          img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
+          img: 'https://cdn.buttercms.com/Kq74mR3kRRmFS5P1Hkxj',
           alt: 'ADD AN ALT TAG',
           caption: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
         },
         {
-          img: 'https://cdn.buttercms.com/lU4tzOQRSsORype2SkIw',
+          img: 'https://cdn.buttercms.com/OvMVy4cBSDez2LQD1Mdp',
           alt: 'ADD AN ALT TAG',
           caption: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ',
         },
         {
-          img: 'https://cdn.buttercms.com/LAfu0mHWSB6U7LjAmPqp',
+          img: 'https://cdn.buttercms.com/7YzDsBI8SoOJ0iFIIRZX',
           alt: 'ADD AN ALT TAG',
           caption: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
         },
@@ -282,19 +262,14 @@ export const partnerList = [
     generalDescription: ['Format: Above solution and company name can be replaced with a logo. We can add a link to the company (from company name or logo) and product home page (from product name or logo)','Here we will have 1 or 2 paragraphs generally about the solution.','The carousel below can have as many slides as needed, and each slide can have a caption of the general length shown','Slides can be anything in PNG, JPEG, GIF, or video format'],
     frames: [
       {
-        img: 'https://cdn.buttercms.com/jZSTgJSDR3OFfAVBPcsc',
+        img: 'https://cdn.buttercms.com/LaEARnepS82pGJGSyWm6',
         alt: 'ADD AN ALT TAG',
         caption: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
       },
       {
-        img: 'https://cdn.buttercms.com/lU4tzOQRSsORype2SkIw',
+        img: 'https://cdn.buttercms.com/vByk6jBxRPedpYMoCs1t',
         alt: 'ADD AN ALT TAG',
         caption: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. ',
-      },
-      {
-        img: 'https://cdn.buttercms.com/LAfu0mHWSB6U7LjAmPqp',
-        alt: 'ADD AN ALT TAG',
-        caption: 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
       },
     ], // end frames
   },

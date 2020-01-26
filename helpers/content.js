@@ -2,7 +2,12 @@ import {
   EllipsisVAlt, 
   CaretUp
 } from '../components/graphics/icons';
-import { green, red } from './common-styles';
+import { 
+  green, 
+  red, 
+  detentionBlue,
+  purple,
+  black } from './common-styles';
 import ImageContainer from '../components/home/image-container';
 import { partnerObj } from '../helpers/partners-input';
 /*
@@ -206,7 +211,7 @@ export default {
       component: <div key='concepts' className='concepts'>
         <div className='concept'>
           <h3 className='concept-header'>
-            Blue-Green Roof concept
+            <span className='blue'>Blue</span>-<span className='green'>Green</span> <span className='roof'>Roof</span> concept
           </h3>
           <p className='concept-text'>
             Storing water in a horizontal reservoir below a green roof with flow control at the drain, often via smart controls.
@@ -214,7 +219,7 @@ export default {
         </div>
         <div className='concept'>
           <h3 className='concept-header'>
-            Purple Roof concept
+            <span className='purple'>Purple</span>-<span className='roof'>Roof</span><sup className='sup'>TM</sup> concept
           </h3>
           <p className='concept-text'>
             Storing water in a horizontal reservoir below a green roof with flow control provided by uniform friction throughout the green roof.
@@ -222,7 +227,7 @@ export default {
         </div>
         <div className='concept'>
           <h3 className='concept-header'>
-            Custom
+            <span className='custom'>Custom</span>
           </h3>
           <p className='concept-text'>
             Unique design by a skilled designer and/or hydrologist to meet custom project needs.
@@ -242,6 +247,33 @@ export default {
             .concept {
               width: 25%;
             }
+          }
+          .concept-header {
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+          span {
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .blue {
+            color: ${detentionBlue};
+          }
+          .green {
+            color: ${green};
+          }
+          .purple {
+            color: ${purple};
+          }
+          .roof {
+            color: ${black};
+          }
+          .custom {
+            color: #5e1c1c;
+          }
+          .sup {
+            font-size: 8px;
+            padding-left: 2px;
           }
         `}</style>
       </div>
