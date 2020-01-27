@@ -2,6 +2,7 @@ export const red =                    '#c12b5b';
 export const green =                  '#74bf08';
 export const greenDarker =            '#1e6d05';
 export const greenDarkerRGB =         '30,109,5';
+export const testStyle = 'Pam';
 export const greenLighter =           '#a2bd5b';
 export const gray =                   '#464143';
 export const black =                  '#231f20';
