@@ -45,9 +45,15 @@ export default function PartnerLogos(){
         width: 45%;
         text-decoration: none;
       }
+      @media (min-width: 500px){
+        .link {
+          width: 150px;
+        }
+      }
       .card {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 100%;
         opacity: 0.8;
         padding: 10px 10px 10px 10px;
@@ -85,17 +91,13 @@ export default function PartnerLogos(){
       }
       @media (min-width: 500px){
         .product {
-          font-size: 14px;
-          height: 40px;
+          font-size: 18px;
           margin-top: initial;
           margin-bottom: initial;
           font-weight: initial;
         }
         .name {
-        }
-        .name {
           font-size: 18px;
-          height: 40px;
         }
       }
       .link {
