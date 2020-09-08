@@ -1,4 +1,4 @@
-import { ChevronDoubleDown } from "../graphics/icons";
+import { ChevronDoubleDown } from "something-rather-iconic";
 import { smoothScroll } from 'browser-helpers';
 import { accentFontColorHover } from "../../helpers/common-styles";
 

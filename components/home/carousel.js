@@ -11,7 +11,7 @@ import { carouselDotColor,
   black}        from '../../helpers/common-styles';
 import { carouselNav, 
   carouselEnlarge }        from '../../helpers/tag-manager';
-import { ExpandAlt }       from '../graphics/icons';
+import { ExpandAlt }       from 'something-rather-iconic';
 import Arrow               from '../graphics/arr';
 import ModalCarousel       from './carousel-modal';
 

@@ -1,7 +1,7 @@
 import {
   EllipsisVAlt, 
   CaretUp
-} from '../components/graphics/icons';
+} from 'something-rather-iconic';
 import { 
   green, 
   red, 
